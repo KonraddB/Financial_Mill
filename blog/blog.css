@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    height: 100%;
+}
+
+img {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:auto;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 16% auto;    ;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "sidebar head"
+    "sidebar rightpage"
+    "sidebar footer";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(241,238,233);
+    color: #fff;
+    font-family: rift-soft, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.blueArt {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49,68,85);
+    height: 35px;
+    /* padding-top:15px;
+    padding-left: 50px; */
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin-top:20px;
+    list-style-type: none;
+    float:right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display:none;
+}
+
+nav ul li.show{
+    display:inline;
+}
+
+/* ul li {
+    display: none;
+} */
+/* 
+ul li.show{
+    display: inline;
+} */
+
+nav ul li a {
+    color: rgb(204,123,70);
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+nav ul li a.active {
+    color:black;
+}
+
+i {
+    font-size: 40px;
+    float:right;
+}
+
+header {
+    background-color: rgb(241,238,233);
+    display: grid;
+    grid-area:head;
+    grid-template-columns: auto;
+    grid-template-rows: 120px;
+}
+
+.main {
+    grid-area:rightpage;
+    grid-template-rows: auto;
+    grid-template-columns: 80% 20%;
+    display:grid;
+    grid-template-areas: 
+    'hero rightbar';
+    overflow-y:scroll;
+}
+
+/* CALENDAR */
+
+.h1Calendar {
+    display:flex;
+    color:rgb(204,123,70);
+    margin-top:20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    font-size: 14px;
+    height: 35px;
+    /* padding-top:15px;
+    padding-left: 50px; */
+    text-transform: uppercase;
+}
+
+/* RIGHTBAR */
+
+.rightbar {
+    grid-area: rightbar;
+    background-color: rgb(241,238,233);
+    color: #fff;
+    font-family: rift-soft, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width:100%;
+    height:100%;
+}
+
+.containerNews h1 {
+    text-transform: uppercase;
+    color:rgb(195,206,216);
+    font-size:14px;
+    margin-top: 40px;
+}
+
+.containerNews {
+    
+}
+
+
+.news h1 {
+    color:black;
+    margin-bottom: 20px;
+}
+
+.news p {
+    color:black;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.news a {
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    font-size:14px;
+    margin-left:50px;
+}
+
+.news i {
+    color:black;
+    margin-right:240px;
+}
+
+.news {
+    width:80%;
+}
+
+hr {
+    margin-top:20px;
+}
+
+/* HERO */
+
+/* FIRST SECTION */
+
+.hero {
+    grid-area: hero;
+    background-color: rgb(241,238,233);
+    color: #fff;
+    font-family: rift-soft, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.latestposts {
+    font-family: rift-soft , sans-serif;
+    margin-top:50px;
+}
+
+.containerLatest {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-left:15px;
+    margin-right:30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 350px;
+    font-family: arial;
+    background-color: #ffffff;
+    color:black;
+  }
+  
+.backgroundCard {
+    background-color: green;
+    height:150px;
+}
+
+.h1Card {
+    margin-top: 30px;
+    padding-left: 25px;
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.pCard {
+    margin-top:15px;
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+.bottomCard {
+    height: 100px;
+}
+
+.bottomCard a {
+    float:right;
+    padding-right: 25px;
+    margin-top:15px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.titleDiv {
+    background-color: rgb(151,170,189);
+    height:280px;
+    width:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleDiv p:nth-child(1) {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color:rgb(151,170,189);
+    margin-bottom: 10px;
+}
+
+.titleDiv h1 {
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.titleContainer {
+    height: 50%;
+    width: 80%;
+    color:white;
+    font-family:rift-soft,sans-serif;
+}
+
+/* BUTTONS */
+
+.containerButton ul{
+    width:100%;
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:rift-soft,sans-serif;
+    list-style: none;
+}
+
+.containerButton ul li {
+    text-align: center;
+    padding:10px 12px;
+    margin-top: 30px;
+    margin-left:30px;
+    margin-right: 30px;
+    background-color:lightgrey;
+    height:40px;
+    width:170px;
+    text-transform: uppercase;
+    color:black;
+    font-weight:700;
+    border-radius:30px;
+    border:none;
+    cursor:pointer;
+}
+
+.containerButton ul li.active {
+    background-color: rgb(204,123,70);
+    border-bottom:2px solid #febd01;
+}
+
+/* CONTAINER CARDS */
+
+.containerCards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right:20px;
+}
+
+.containerCards .card {
+    margin-bottom:30px;
+}
+
+
+footer {
+    display:grid;
+    grid-template-rows: 120px;
+    grid-area:footer;
+    background: rgb(195,206,216);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display:flex;
+        justify-content: space-between;
+        height:200px;
+        align-items: center;
+    }
+
+    nav ul {
+        display:flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        margin:0;
+    }
+}
