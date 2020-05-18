@@ -23,6 +23,7 @@ nav {
     font-style: normal;
     font-weight: 500;
     width: 100%;
+    padding-bottom:20px;
 }
 
 body {
@@ -105,7 +106,7 @@ header {
 
 .main {
     grid-area:rightpage;
-    grid-template-rows: 80px 400px fit-content(200px) fit-content(800px) 120px;
+    grid-template-rows: fit-content(80px) 400px fit-content(200px) fit-content(800px) 120px;
     display:grid;
     grid-template-areas: 
     'head'
@@ -121,8 +122,10 @@ header {
     display:flex;
     color:rgb(204,123,70);
     margin-top:20px;
+    margin-bottom:15px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-wrap:wrap;
     font-size: 14px;
     height: 35px;
@@ -148,7 +151,7 @@ header {
     background-repeat: no-repeat;
     opacity:0.8;
     z-index:1;
-    position: relative;
+    position: absolute;
     height:400px;
     min-width:100%;
 }
@@ -216,4 +219,64 @@ header {
 footer {
     grid-area:footer;
     background: rgb(195,206,216);
+}
+
+@media screen and (max-width: 768px) {
+    .home .slide.active{
+        position: relative;
+        width:100%;
+    }
+    .home {
+        font-size:14px;
+    }
+
+    .home .caption .h2Blog {
+        font-size: 18px;
+        text-transform: lowercase;
+        color:black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        margin-bottom: 20px;
+    }
+    
+    .h1Blog {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .sidebar {
+        display:none;
+    }
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "rightpage";
+    }
+
+    .card {
+        margin-top:30px;
+    }
+
+    ul {
+        width:80%;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .containerHome {
+        width:80%;
+    }
+
+    .h1Blog {
+        font-size:42px;
+    }
+    
+    .home .caption {
+        margin-top:-40px;
+    }
 }

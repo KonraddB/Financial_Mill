@@ -129,8 +129,10 @@ header {
     display:flex;
     color:rgb(204,123,70);
     margin-top:20px;
+    margin-bottom:15px;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-wrap:wrap;
     font-size: 14px;
     height: 35px;
@@ -152,7 +154,7 @@ header {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height:80%;
+    min-height: 80%;
     width:100%;
     height:auto;
     position: absolute;
@@ -449,7 +451,49 @@ footer {
 
 @media screen and (max-width: 768px) {
     .home .slide.active{
-        position: relative;
+        position: absolute;
         width:100%;
     }
+    .home {
+        font-size:14px;
+    }
+
+    .home .caption .h2Blog {
+        font-size: 18px;
+        text-transform: lowercase;
+        color:black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        margin-bottom: 20px;
+    }
+    
+    .h1Blog {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    .sidebar {
+        display:none;
+    }
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "rightpage";
+    }
+
+    .card {
+        margin-top:30px;
+    }
+
+    ul {
+        width:80%;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+    }
+    
 }

@@ -29,11 +29,20 @@
     .cld-labels{
         display:inline-block;
         font-size:16px;
-        min-width:270px;
+        width:90%;
+        margin-right: 40px;
+        /* max-width: 100%;
         height:auto;
         color:rgb(204,123,70);
-        font-weight: 700;
+        font-weight: 700; */
     }
+
+    .cld-label{
+      font-size:13px;
+      padding-left: 20px;
+      color:rgb(204,123,70);
+      font-weight: 700;
+  }
 
     .cld-nav{
       position: relative;
