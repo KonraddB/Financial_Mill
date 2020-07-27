@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -26,6 +29,7 @@ nav {
     padding-bottom:20px;
 }
 
+
 body {
     margin: 0;
     display: grid;
@@ -37,7 +41,7 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     color: #fff;
     font-family: rift-soft, sans-serif;
     font-style: normal;
@@ -45,6 +49,7 @@ body {
 }
 
 .blueArt {
+    font-family: 'Roboto Condensed', sans-serif;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -54,18 +59,23 @@ body {
     padding-left: 50px; */
     text-transform: uppercase;
 }
+
 a {
     text-decoration: none;
 }
 
 ul {
+    margin-top:20px;
     list-style-type: none;
     float:right;
     margin-right: 30px;
-    margin-top:20px;
 }
 
 ul li {
+    display:none;
+}
+
+ul li.active {
     display:none;
 }
 
@@ -88,7 +98,7 @@ ul li a {
     text-transform: uppercase;
 }
 
-ul li a:active {
+ul li a.active {
     color:black;
 }
 
@@ -98,11 +108,12 @@ i {
 }
 
 header {
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     display: grid;
     grid-area:head;
     grid-template-columns: auto;
 }
+
 
 .main {
     grid-area:rightpage;
@@ -119,6 +130,7 @@ header {
 /* CALENDAR */
 
 .h1Calendar {
+    font-family: 'Roboto', sans-serif;
     display:flex;
     color:rgb(204,123,70);
     margin-top:20px;
@@ -127,7 +139,7 @@ header {
     justify-content: center;
     text-align: center;
     flex-wrap:wrap;
-    font-size: 14px;
+    font-size: 18px;
     height: 35px;
     /* padding-top:15px;
     padding-left: 50px; */
@@ -135,7 +147,7 @@ header {
 }
 
 .home {
-    background-image: url(/images/etf_680.jpg);
+    background-image: url(/images/image1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,20 +173,21 @@ header {
     text-align: center;
     padding:100px;
     font-family: rift-soft, sans-serif;
-    color: white;
 }
 
 .home .caption .h2Blog {
     font-size: 30px;
     text-transform: lowercase;
-    color:black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    -webkit-text-stroke: 1px #ffffff;
+    color: rgba(0,0,0,0);
     margin-bottom: 20px;
 }
 
 .h1Blog {
     font-size: 62px;
     margin-bottom:40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* TEXTCONTENT */

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .cld-main{
     width:100%;
     height:auto;
@@ -14,15 +16,17 @@
       max-width: 300px;
       margin: auto;
       overflow: hidden;
-      margin-bottom:25px;
+      margin-bottom:5px;
       color:black;
       font-weight: 700;
     }
     .cld-datetime .today{
+      font-family: 'Lato', sans-serif;
       position: relative;
       float: left;
       width: calc(100% - 40px);
       margin: auto;
+      font-size:16px;
       text-align: center;
     }
 
@@ -78,7 +82,7 @@
       height: 20px;
       width: 20px;
       border-radius: 50px;
-      background: #666;
+      background: #000000;
       color: #fff;
     }
     .cld-day.disableDay{
@@ -90,8 +94,8 @@
       .cld-number{
         position: relative;
         margin: 5px;
-        padding: 5px;
-        color:rgb(169,159,166);
+        padding: 2px;
+        color:#000000;
       }
         .cld-title{
           position: absolute;
@@ -122,8 +126,8 @@
         }
         .cld-number.eventday{
           display: inline-block;
-          height: 20px;
-          width: 20px;
+          height: 25px;
+          width: 25px;
           border-radius: 50px;
           border: 1px solid #999;
         }

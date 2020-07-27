@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
 * {
@@ -38,7 +40,7 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     color: #fff;
     font-family: rift-soft, sans-serif;
     font-style: normal;
@@ -46,6 +48,7 @@ body {
 }
 
 .blueArt {
+    font-family: 'Roboto Condensed', sans-serif;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +107,7 @@ i {
 }
 
 header {
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     display: grid;
     grid-area:head;
     grid-template-columns: auto;
@@ -126,6 +129,7 @@ header {
 /* CALENDAR */
 
 .h1Calendar {
+    font-family: 'Roboto', sans-serif;
     display:flex;
     color:rgb(204,123,70);
     margin-top:20px;
@@ -134,7 +138,7 @@ header {
     justify-content: center;
     text-align: center;
     flex-wrap:wrap;
-    font-size: 14px;
+    font-size: 18px;
     height: 35px;
     /* padding-top:15px;
     padding-left: 50px; */
@@ -150,7 +154,7 @@ header {
 }
 
 .home .slider {
-    background-image: url(images/etf_680.jpg);
+    background-image: url(images/image1.png);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,6 +192,8 @@ header {
     width : 100%;
     text-align: center;
     padding:50px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-family: rift-soft, sans-serif;
     color: white;
 }
@@ -195,14 +201,15 @@ header {
 .home .caption .h2Blog {
     font-size: 30px;
     text-transform: lowercase;
-    color:black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: rgba(0,0,0,0);
+    -webkit-text-stroke: 1px #ffffff;
     margin-bottom: 20px;
 }
 
 .h1Blog {
-    font-size: 62px;
+    font-size: 32px;
     margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btnHome {
@@ -234,6 +241,7 @@ header {
 }
 
 .home .slide.active .caption .pBlog {
+    font-family: 'Lato', sans-serif;
     opacity:0;
     animation: captionText .5s ease forwards;
     animation-delay:1s;
@@ -262,13 +270,12 @@ header {
     position: absolute;
     z-index:2;
     top:50%;
-    height:40px;
-    width:40px;
+    height:60px;
+    width:60px;
     margin-top:-40px;
     color: #ffffff;
     text-align: center;
     line-height: 40px;
-    font-size:40px;
     cursor:pointer;
     transition:all .5s ease;
     opacity: 0.5;
@@ -299,17 +306,19 @@ header {
 
 .home .indicator div {
     display: inline-block;
-    width:25px;
-    height:25px;
-    color: #ffffff;
+    width:10px;
+    height:10px;
+    background-color:rgba(0,0,0,0.2);
+    text-emphasis: shadow 1px;
     border-radius: 50%;
     text-align: center;
     line-height: 25px;
     margin:0 3px;
+    margin-left:6px;
 }
 
 .home .indicator div.active {
-    background-color: #000;
+    background-color: whitesmoke;
 }
 
 @media(max-width: 767px) {
@@ -321,7 +330,7 @@ header {
 /* latestposts */
 
 .latestposts {
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     font-family: rift-soft , sans-serif;
     color: rgb(204,123,70);
     grid-area:'latestposts';
@@ -352,11 +361,17 @@ header {
     font-family: arial;
     background-color: #ffffff;
     color:black;
+    margin-bottom:30px;
   }
   
 .backgroundCard {
     background-color: green;
     height:150px;
+    width:350px;
+}
+
+#imageCard1 {
+    background-image: url(/images/image1.png);
 }
 
 .h1Card {
@@ -388,7 +403,7 @@ header {
 /* nearestschool */
 
 .nearestschool {
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     grid-area:'nearestschool';
     font-family:rift-soft, sans-serif;
 }
@@ -415,7 +430,7 @@ header {
 /* withus */
 
 .withus {
-    background-color: rgb(241,238,233);
+    background-color: #ffffff;
     grid-area: 'withus';
     font-family:rift-soft, sans-serif;
 }
@@ -448,6 +463,18 @@ footer {
 }
 
 /* MOBILE  */
+
+@media screen and (max-width:1180px) {
+    .home .caption {
+        padding:0;
+        margin-top:20px;
+    }
+
+    .h1Calendar {
+        margin-bottom:50px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .home .slide.active{
