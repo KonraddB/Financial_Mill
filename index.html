@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="calendar/theme1.css">
 </head>
 <body>
-
-        <div class="sidebar">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="blueArt"><p>bądź na bieżąco</p></div>
+          <h1 class="h1Calendar">Kalendarz naszych wydarzeń</h1>
+          <div id="caleandar"></div>
+        </div>
+        <div class="sidebar" style="display:none;">
             <img src="images/financialmil_czarne_RGB-01.png" alt="Financial_Mill_logo">
             <div class="blueArt"><p>bądź na bieżąco</p></div>
             <h1 class="h1Calendar">Kalendarz naszych wydarzeń</h1>
@@ -18,174 +23,121 @@
         </div>
 
         <main class="main">
-            <header>
-                <nav>
-                    <ul>
-                        <li class="liNav"><a class="active" href="#">Strona główna</a></li>
-                        <li class="liNav"><a href="/blog/blog.html">blog</a></li>
-                        <li class="liNav"><a href="/aboutus/aboutus.html">o nas</a></li>
-                        <li class="liNav"><a href="#">kontakt</a></li>
-                        <i class="fas fa-bars"></i>
-                    </ul> 
-                </nav>
-            </header>
+ <!-- Start Header -->
+        <header>
+            <div class="container">
+            <div class="row">
+                <div class="brand-name">
+                    <img onclick="openNav()" src="images/financialmil_biale_RGB-01.png" alt="">
+                </div>
+                <div class="navbar">
+                <ul>
+                        <li><a href="#" class="active">Strona główna</a></li>
+                        <li><a href="/blog/blog.html">Blog</a></li>
+                        <li><a href="/aboutus/aboutus.html">O mnie</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </header>
+<!-- End Header -->
+                <div class="nav-right visible-xs">
+  <div class="button" id="btn">
+    <div class="bar top"></div>
+    <div class="bar middle"></div>
+    <div class="bar bottom"></div>
+  </div>
+</div>
+<!-- nav-right -->
+
 
             <section class="home">
-                <div class="slider">
-                    <div class="slide active">
-                        <div class="container">
-                            <div class="caption">
-                                <h2 class="h2Blog">#ror #inwestycje #oszczędności #bankowość</h3>
-                                <h1 class="h1Blog">Rachunek oszczędnościowo/rozliczeniowy</h1>
-                                <p class="pBlog">ROR pierwszym krokiem do bogactwa<p>
-                                <button class ="btnHome" type="submit"><a href="readpage/readpage.html">Czytaj dalej</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="container">
-                            <div class="caption">
-                                <h2 class="h2Blog">#Blog</h3>
-                                <h1 class="h1Blog">Tytuł2 ostatniego wpisu</h1>
-                                <p class="pBlog">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-                                <button class ="btnHome" type="submit"><a href="readpage/readpage.html">Czytaj dalej</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="container">
-                            <div class="caption">
-                                <h2 class="h2Blog">#Blog</h3>
-                                <h1 class="h1Blog">Tytuł3 ostatniego wpisu</h1>
-                                <p class="pBlog">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
-                                <button class ="btnHome" type="submit"><a href="readpage/readpage.html">Czytaj dalej</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="CSSgal">
 
-                <div class="controls">
-                    <div class="prev"><img src="images/arrow_back_ios-white-18dp.svg" alt=">"></div>
-                    <div class="next"><img src="images/arrow_forward_ios-white-18dp.svg" alt="<"></i></div>
-                </div>
-
-                <div class="indicator">
-                </div>
+                    <!-- Don't wrap targets in parent -->
+                    <s id="s1"></s> 
+                    <s id="s2"></s>
+                    <s id="s3"></s>
+                    <s id="s4"></s>
+                  
+                    <div class="slider">
+                      <div style="background-image:url(images/eye-3440464.jpg);">
+                              <p>#oko #oszczednosci #inwestycje #bankowosc</p>
+                              <h2>Oko</h2>
+                              <h3>Jedno OKO na Maroko, drugie w banku</h3>
+                          </div>
+                      <div style="background-image:url(images/piggy-3612928.jpg);">
+                              <p>#ror #oszczednosci #inwestycje #bankowosc</p>
+                              <h2>Rachunek rozliczeniowo-oszczędnosciowy</h2>
+                              <h3>ROR pierwszym krokiem do bogactwa</h3>
+                          </div>
+                      <div style="background-image:url(images/blur-1853262.jpg);">
+                              <p>#lokata #oszczednosci #inwestycje #bankowosc</p>
+                              <h2>Oszczędzanie</h2>
+                              <h3>Zamrazarka z kostkami lodu</h3>
+                          </div>
+                      <div style="background-image:url(images/pen-4850075_1920.jpg);">
+                              <p>#obligacje #oszczednosci #inwestycje #bankowosc</p>
+                              <h2>Obligacje państwa</h2>
+                              <h3>Chcesz być właścicielem Polski? Nie ma problemu?</h3>
+                          </div>
+                    </div>
+                    
+                    <div class="prevNext">
+                      <div><a href="#s4"><</a><a href="#s2">></a></div>
+                      <div><a href="#s1"><</a><a href="#s3">></a></div>
+                      <div><a href="#s2"><</a><a href="#s4">></a></div>
+                      <div><a href="#s3"><</a><a href="#s1">></a></div>
+                    </div>
+                  
+                    <div class="bullets">
+                      <a href="#s1"></a>
+                      <a href="#s2"></a>
+                      <a href="#s3"></a>
+                      <a href="#s4"></a>
+                    </div>
+                  
+                  </div>
             </section>
 
             <section class="latestposts">
-                <h1>Ostatnie na blogu</h1>
-                <div class="containerLatest">
-                    <div class="card">
-                        <div class="backgroundCard" id="imageCard1"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#ror #inwestycje #oszczędności #bankowość</p>
-                            <p class="pCard">ROR pierwszym krokiem do bogactwa</p>
-                            <a href="/readpage/readpage.html">Czytaj dalej</a>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
+              <div class="containerCard">
+                <img src="images/books-2596809_1920.jpg" alt="" srcset="">
+                <div class="bodyCard">
+                  <h1>Edukacja</h1>
+                  <p>Nauka jest niezbędnym elementem rozwoju każdego z nas.  Staramy się przekazywać wiedzę w jasny i zrozumiały sposób, aby każdy z czytelników naszego bloga mógł rozwijać się razem z nami. Zachęcamy do komentowania naszych wpisów i wspólnej dyskusji. Każda interakcja z Waszej strony pomaga nam lepiej dopasować tematykę bloga.</p>
                 </div>
+              </div>
+
+              <div class="containerCard">
+                <div class="bodyCard">
+                  <h1 style="margin-top:-20px !important">E-learning</h1>
+                  <p>Najlepszym sposobem na przyswajanie wiedzy jest praktyka. Na organizowanych przez nas szkoleniach rozłożymy na czynniki pierwsze procesy jakie zachodzą na rynku finansowym. Chcemy poruszać ważne tematy, które dadzą naszym czytelnikom realną wartość, dlatego tematyka szkoleń będzie zależeć również od Was! Na stronie znajdziecie prezentacje oparte na mapach myśli, które naszym zdaniem pomagają w efektywnym zrozumieniu. Oprócz tego zapraszam was również do udziału w szkoleniach online lub stacjonarnych.</p>
+                </div>
+                <img src="images/e-learning-3734521_1920.jpg" alt="" srcset="">
+              </div>
+
+              <div class="containerCard">
+                <img src="images/change-4039486_1920.jpg" alt="" srcset="">
+                <div class="bodyCard">
+                  <h1>Bądź na bieżąco</h1>
+                  <p>Staramy się co jakiś czas odnosić nasze wpisy do sytuacji panującej na rynku. Wiemy jak wiele manipulacji znajduję się w mediach, dlatego naszym celem jest być obiektywnym w każdym temacie. Jeśli nie możemy być obiektywni to po prostu o tym napiszemy. Ważne jest dla nas jednak żebyś wyrażając swoje poglądy na dany temat znał perspektywę każdej ze stron.  </p>
+                </div>
+              </div>
+
+              <div class="containerCard">
+                <div class="bodyCard">
+                  <h1>Konsultacja</h1>
+                  <p>Marzenie to cel z datą realizacji. W pełni się z tym utożsamiamy i wiemy, że planując zwiększamy prawdopodobieństwo sukcesu. Jeśli coś cię nurtuję lub po prostu chcesz skorzystać z naszego wsparcia skontaktuj się z nami. Postaramy się pomóc sięgając po rozwiązania, które będą dla Ciebie w pełni dopasowane. </p>
+                </div>
+                <img src="images/pen-4850075_1920.jpg" alt="" srcset="">
+              </div>
             </section>
 
-            <section class="nearestschool">
-                <h1>Najbliższe szkolenia</h1>
-                    <div class="containerNearest">
-                        <div class="card">
-                            <div class="backgroundCard"></div>
-                            <div class="bottomCard">
-                                <p class="h1Card">#inwestycje</p>
-                                <p class="pCard">Tytuł wpisu</p>
-                                <a href="">Czytaj dalej</a>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="backgroundCard"></div>
-                            <div class="bottomCard">
-                                <p class="h1Card">#inwestycje</p>
-                                <p class="pCard">Tytuł wpisu</p>
-                                <a href="">Czytaj dalej</a>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="backgroundCard"></div>
-                            <div class="bottomCard">
-                                <p class="h1Card">#inwestycje</p>
-                                <p class="pCard">Tytuł wpisu</p>
-                                <a href="">Czytaj dalej</a>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="backgroundCard"></div>
-                            <div class="bottomCard">
-                                <p class="h1Card">#inwestycje</p>
-                                <p class="pCard">Tytuł wpisu</p>
-                                <a href="">Czytaj dalej</a>
-                            </div>
-                          </div>
-                    </div>
-            </section>
+           
 
-            <section class="withus">
-                <h1>Z nami możesz więcej</h1>
-                <div class="containerWith">
-                    <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="backgroundCard"></div>
-                        <div class="bottomCard">
-                            <p class="h1Card">#inwestycje</p>
-                            <p class="pCard">Tytuł wpisu</p>
-                            <a href="">Czytaj dalej</a>
-                        </div>
-                      </div>
-                </div>
-            </section>
+            
 
             <footer>
                 <section class="footerContainer">
@@ -197,6 +149,7 @@
 
 <script src="calendar/caleandar.js"></script>
 <script src="calendar/demo.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
