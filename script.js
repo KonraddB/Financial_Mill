@@ -156,6 +156,11 @@ let index = 0;
         toggleSidebar();
       }
     });
+
+    $('.test').parallaxie({
+      speed: 0.5,
+      offset: 50,
+    });
   
   });
 
@@ -166,3 +171,4 @@ let index = 0;
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+

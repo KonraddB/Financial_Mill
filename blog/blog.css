@@ -6,7 +6,8 @@
 * {
     box-sizing: border-box;
     margin:0;
-    padding:0;
+	padding:0;
+	font-family:'Roboto', sans-serif;
 }
 
 html,body {
@@ -21,34 +22,16 @@ img {
     height:auto;
 }
 
-nav {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    width: 100%;
-    padding-bottom:20px;
-}
-
 
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 16% auto;    ;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "sidebar head"
-    "sidebar rightpage"
-    "sidebar footer";
+    "rightpage";
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: #ffffff;
-    color: #fff;
-    font-family: rift-soft, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-}
 
 .blueArt {
     font-family: 'Roboto Condensed', sans-serif;
@@ -57,74 +40,153 @@ body {
     justify-content: center;
     background-color: rgb(49,68,85);
     height: 35px;
+    color:white;
     /* padding-top:15px;
     padding-left: 50px; */
     text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;
+/*Header*/
+
+header{
+	position: absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 1px solid #ffffff;
+	padding:0px 15px;
+    z-index:11;
+    max-height:82.6px;
+}
+header.fixed{
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	border-color: black;
+	animation: fixHeader .5s ease;
+	z-index: 11;
 }
 
-ul {
-    margin-top:20px;
-    list-style-type: none;
-    float:right;
-    margin-right: 30px;
+@keyframes fixHeader{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+	transform: translateY(-0%);	
+	}
 }
 
-ul li {
-    display:none;
+header .row{
+	justify-content: space-between;
+	align-items: center;
 }
-
-ul li.active {
-    display:none;
+header .brand-name img{
+   text-decoration: none;
+   color:#ffffff;
+   text-transform: uppercase;
+   position: absolute;
+   margin-top:-10px;
+   width:100px;
+   height:100px;
 }
-
-ul li.show{
-    display:inline;
-}
-
-/* ul li {
-    display: none;
-} */
-/* 
-ul li.show{
-    display: inline;
-} */
-
-ul li a {
-    color: rgb(204,123,70);
-    padding: 20px;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-ul li a.active {
+header.fixed .brand-name a{
     color:black;
 }
-
-i {
-    font-size: 40px;
+header .navbar ul{
+	list-style: none;
+	padding:0;
+    margin:0;
     float:right;
+    margin-right:20px;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left:35px;
+}
+header .navbar ul li a{
+	font-size: 17px;
+	text-decoration: none;
+	line-height: 82px;
+	color:#ffffff;
+	display: block;
+	font-weight: 600;
+	position: relative;
+}
+header.fixed .navbar ul li a{
+  color:#ffffff;
 }
 
-header {
-    background-color: #ffffff;
-    display: grid;
-    grid-area:head;
-    grid-template-columns: auto;
+header .navbar ul li a::before{
+   content: '';
+   height: 3px;
+   background-color: #ffffff;
+   width:0%;
+   position: absolute;
+   right:0px;
+   bottom:-1px;
+   transition: all .5s ease;
 }
+
+
+
+
+header .navbar ul li a:hover{
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    font-size:20px;
+}
+
+/* SIDEBAR */
+.sidenav {
+  margin-top:80px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*Home Section*/
 
 
 .main {
     grid-area:rightpage;
-    grid-template-rows: auto;
-    grid-template-columns: 80% 20%;
+    grid-template-rows:100vh 100vh fit-content(400px) fit-content(400px) 120px;
     display:grid;
     grid-template-areas: 
-    'hero rightbar';
-    overflow-y:scroll;
+    'home'
+    'latestposts'
+    'nearestschool'
+    'withus'
+    'footer';
 }
 
 /* CALENDAR */
@@ -132,7 +194,7 @@ header {
 .h1Calendar {
     font-family: 'Roboto', sans-serif;
     display:flex;
-    color:rgb(204,123,70);
+    color:white;
     margin-top:20px;
     margin-bottom:15px;
     align-items: center;
@@ -146,75 +208,220 @@ header {
     text-transform: uppercase;
 }
 
-/* RIGHTBAR */
+/* rightpage - home sectiomn */
 
-.rightbar {
-    grid-area: rightbar;
-    background-color: #ffffff;
-    color: #fff;
-    font-family: rift-soft, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    width:100%;
-    height:100%;
-}
-
-.containerNews h1 {
-    text-transform: uppercase;
-    color:rgb(195,206,216);
-    font-size:14px;
-    margin-top: 40px;
+.home {
+    position: relative;
+    grid-area:home;
+    grid-template-columns: auto;
 }
 
 
-.news h1 {
-    color:black;
-    margin-bottom: 20px;
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Or set a fixed height */
 }
 
-.news p {
-    color:black;
-    font-size:13px;
-    margin-bottom:20px;
+/* SLIDER */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
 }
 
-.news a {
-    text-decoration: none;
-    color:black;
-    font-weight: 700;
-    font-size:14px;
-    margin-left:50px;
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.news i {
-    color:black;
-    margin-right:240px;
+/* .CSSgal .slider .sliderImage {
+    opacity: 0.8;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+} */
+
+
+.removeStyles {
+    
 }
 
-.news {
-    width:80%;
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
 }
 
-hr {
-    margin-top:20px;
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
 }
 
-/* HERO */
-
-/* FIRST SECTION */
-
-.hero {
-    grid-area: hero;
-    background-color: #ffffff;
-    color: #fff;
-    font-family: rift-soft, sans-serif;
-    font-style: normal;
-    font-weight: 500;
+.CSSgal .prevNext a {
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px; /* If you want to place numbers */
+  text-align: center;
+  color:white;
+  font-size:40px;
+  text-shadow:1px 1px 1px white;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
 }
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       15px;
+	height:      15px;
+	line-height: 15px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+
+.CSSgal .slider p {
+	margin-top: 35vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 2em;
+}
+
+.CSSgal .slider h2 {
+	margin-top: 10px;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+
+.CSSgal .slider h3 {
+	margin-top: 10px;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 2em;
+}
+
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+
+
+
+/* latestposts */
 
 .latestposts {
+    background-color: #ffffff;
     font-family: rift-soft , sans-serif;
-    margin-top:50px;
+    color: rgb(204,123,70);
+    grid-area:'latestposts';
+    display:grid;
+    width:80%;
+    margin:auto;
+    position: relative;
+    overflow-x: hidden !important;
+}
+
+.latestposts h1:nth-child(1) {
+    opacity:0.5;
+    font-size:16px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    text-transform: uppercase;
 }
 
 .containerLatest {
@@ -232,11 +439,17 @@ hr {
     font-family: arial;
     background-color: #ffffff;
     color:black;
+    margin-bottom:30px;
   }
   
 .backgroundCard {
     background-color: green;
     height:150px;
+    width:350px;
+}
+
+#imageCard1 {
+    background-image: url(/images/image1.png);
 }
 
 .h1Card {
@@ -265,91 +478,104 @@ hr {
     text-transform: uppercase;
 }
 
-.titleDiv {
-    background-color: rgb(151,170,189);
-    height:280px;
-    width:68%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/* nearestschool */
+
+.nearestschool {
+    background-color: #ffffff;
+    grid-area:'nearestschool';
+    font-family:rift-soft, sans-serif;
 }
 
-.titleDiv p:nth-child(1) {
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    color:rgb(151,170,189);
-    margin-bottom: 10px;
-}
-
-.titleDiv h1 {
-    margin-bottom:15px;
-    font-size:22px;
-}
-
-.titleContainer {
-    height: 50%;
-    width: 80%;
-    color:white;
-    font-family:rift-soft,sans-serif;
-}
-
-/* BUTTONS */
-
-.containerButton ul{
-    width:100%;
-    display:inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family:rift-soft,sans-serif;
-    list-style: none;
-}
-
-.containerButton ul li {
-    text-align: center;
-    padding:10px 12px;
-    margin-top: 30px;
-    margin-left:30px;
-    margin-right: 30px;
-    background-color:lightgrey;
-    height:40px;
-    width:170px;
+.nearestschool h1:nth-child(1) {
+    opacity:0.5;
+    font-size:16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
     text-transform: uppercase;
-    color:black;
-    font-weight:700;
-    border-radius:30px;
-    border:none;
-    cursor:pointer;
+    color: rgb(204,123,70);
 }
 
-.containerButton ul li.active {
-    background-color: rgb(204,123,70);
-    border-bottom:2px solid #febd01;
-}
-
-/* CONTAINER CARDS */
-
-.containerCards {
-    display:flex;
+.containerNearest {
+    display: flex;
+    flex-direction: row;
     flex-wrap:wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    margin-right:20px;
+    justify-content: space-between;
+    margin-left:15px;
+    margin-right:30px;
 }
 
-.containerCards .card {
-    margin-bottom:30px;
+/* withus */
+
+.withus {
+    background-color: #ffffff;
+    grid-area: 'withus';
+    font-family:rift-soft, sans-serif;
 }
 
+.withus h1:nth-child(1) {
+    opacity:0.5;
+    font-size:16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    color: rgb(204,123,70);
+}
+
+.containerWith {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:15px;
+    margin-right:30px;
+    margin-bottom: 30px;
+}
+
+/* footer */
 
 footer {
-    display:grid;
-    grid-template-rows: 120px;
     grid-area:footer;
     background: rgb(195,206,216);
 }
 
+/* MOBILE  */
+
+@media screen and (max-width:1180px) {
+    .home .caption {
+        padding:0;
+        margin-top:20px;
+    }
+
+    .h1Calendar {
+        margin-bottom:50px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
+    .home .slide.active{
+        position: absolute;
+        width:100%;
+    }
+    .home {
+        font-size:14px;
+    }
+
+    .home .caption .h2Blog {
+        font-size: 18px;
+        text-transform: lowercase;
+        color:black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        margin-bottom: 20px;
+    }
     
+    .h1Blog {
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
     .sidebar {
         display:none;
     }
@@ -357,24 +583,11 @@ footer {
     body {
         margin: 0;
         display: grid;
-        grid-template-columns: auto;    ;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "head"
-        "rightpage"
-        "footer";
-    }
-
-    .main {
-        grid-area:rightpage;
-        grid-template-rows: auto;
         grid-template-columns: auto;
-        display:grid;
+        grid-template-rows: auto;
         grid-template-areas: 
-        'hero'
-        'rightbar';
-        overflow-y:scroll;
-    }    
+        "rightpage";
+    }
 
     .card {
         margin-top:30px;
@@ -387,15 +600,80 @@ footer {
         flex-direction: column;
         align-items:center;
     }
-
-    .titleDiv {
-        height:400px;
-        margin-top:20px;
-        width:100%;
-    }
-
-    .containerNews {
-        margin-left:50px;
-    }
     
+}
+
+.containerCard {
+  display:flex;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  color:black;
+}
+
+.containerCard img {
+  margin-top:50px;
+  width:600px;
+  height:300px;
+  border-radius:10px;
+}
+
+.containerCard .bodyCard {
+  margin-top:50px;
+  padding-top:50px;
+  width:600px;
+  height:300px;
+}
+
+.containerCard .bodyCard h1,p {
+  width:80%;
+  text-align: center;
+  margin:auto;
+}
+
+.containerCard .bodyCard h1 {
+  font-size: 22px;
+  padding-bottom:20px;
+  text-shadow:2px 2px 2px grey;
+}
+
+footer{
+  margin-top:50px !important;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.slider-frame {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.slider-frame .btn {
+	width: 40px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+}
+.slider-frame .btn.prev {
+	left: 0px;
+}
+.slider-frame .btn.next {
+	right: 0px;
+}
+.slider-frame .slider-container {
+	transition: margin-left 0.2s ease, left 0.5s ease;
+	position: absolute;
+	left: 0;
+}
+.slider-frame .slider-container .slide {
+	background-color: #f00;
+	float: left;
+	position: relative;
+	top: 0;
+	transition: width 0.2s ease, height 0.2s ease, top 0.2s ease;
+}
+.slider-frame .slider-container .slide:nth-child(even) {
+	background-color: blue;
 }
