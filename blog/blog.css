@@ -722,13 +722,15 @@ footer{
 	background-color: white;
 	float: left;
 	position: relative;
-	top: 0;
+    top: 0;
+    padding-right:5px;
 	transition: width 0.2s ease, height 0.2s ease, top 0.2s ease;
 }
 
 .slider-frame .slider-container .slide:hover {
     background-color:white;
-    content:'hej';
+    transition: 0.18s ease-in-out;
+
 }
 .slider-frame .slider-container .slide:nth-child(even) {
 	background-color: white;
@@ -789,16 +791,13 @@ footer{
   }
 
   .cardTop p {
-    width: 276px;
-    height: 38px;
-    left: 201px;
-    top: 931px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
 
     color: #FFFFFF;
 
@@ -851,6 +850,7 @@ footer{
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
+    margin:15px 0 15px 0;
     line-height: 21px;
   }
   
@@ -861,7 +861,7 @@ footer{
     font-size: 8px;
     line-height: 10px;
     /* identical to box height */
-    margin:8px 0 5px 0;
+    margin:15px 0 15px 0;
 
     color: #000000;
   }
@@ -875,6 +875,7 @@ footer{
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+    margin:15px 0 15px 0;
 
     color: #000000;
   }
@@ -886,10 +887,20 @@ footer{
     font-size: 15px;
     line-height: 153.4%;
     /* or 23px */
-
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     text-align: right;
+    width:130px;
+    padding:10px;
+    padding-right:20px;
+    padding-left:-100px;
+    color: black;
+    margin-top:20px;
+  }
 
-    color: #2E6171;
+  .readbutton:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
   }
   
   
@@ -910,12 +921,12 @@ footer{
 
   .slide:hover .cardBottom {
     transition: 0.4s all ease;
-    height: 50%;
+    height: 75%;
     opacity: 1;
   }
   
   .slide:hover .cardTop {
-    height: 50%;
+    height: 25%;
     opacity: 0.8;
     transition: 0.4s all ease;
   }
@@ -936,7 +947,7 @@ footer{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 85px;
     
     color: #2E6171;

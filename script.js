@@ -7,9 +7,8 @@ var app = new Vue({
       slides: [
           {
               headlineFirstLine: "Otwarte Konto Oszczędnościowe",
-              headlineSecondLine: "Jedno oko na maroko, drugie w banku",
-              sublineFirstLine: "Nihil sub sole",
-              sublineSecondLine: "novum",
+              headlineSecondLine: "Jedno oko na maroko drugie w banku",
+              sublineFirstLine: "#bankowość",
               bgImg: "images/eye-3440464_1920.jpg",
               rectImg: "images/eye-3440464_1920.jpg"
           },

@@ -28,10 +28,10 @@
         <header>
             <div class="container">
             <div class="row">
-                <div class="brand-name">
+                <div class="brand-name" style="margin-left:-270px !important">
                     <img onclick="openNav()" src="images/financialmil_biale_RGB-01.png" alt="">
                 </div>
-                <div class="navbar">
+                <div class="navbar" style="margin-right:-300px !important">
                 <ul>
                         <li><a href="#" class="active">Strona główna</a></li>
                         <li><a href="/blog/blog.html">Blog</a></li>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="slide-content">
                             <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p style="font-size:20px !important; margin-top:40px; text-transform: lowercase !important;">{{ slide.headlineSecondLine }}</p></h1><a href="readpage/readpage.html" class="slide-content-cta">Czytaj dalej</a></div>
-                        <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
+                        <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} </span></h2></div>
                 </div>
             <div class="controls-container">
                 <button class="controls-button" 
@@ -170,6 +170,7 @@
                   <div class="flip-card-back" style="background: url(images/Rectangle172.png);">
                     <h3>Konsultacje</h3>
                     <p>Umów się na bezpłatną konsultacjeze specjalistą. Pomożemy Ci w planowaniui realizacji Twoich celów.</p>
+                    <a href="readpage/readpage.html" class="slide-content-cta" style="margin-left:-15px;">Czytaj dalej</a>
                   </div>
                 </div>
               </div>
@@ -182,6 +183,10 @@
                 <h1>Jak będą funkcjonowały rynki finansowe?<br><br> W jakim systemie przyjdzie nam żyć?<br><br> Czy za za 20 lat nie będzie już gotówki?<br><br> Czy może czeka nas gigantyczny krach finansowy?<br><br> W tych kwestiach możemy jedynie spekulować nawet przez kolejną dekadę. Nie ma znaczenia jednak co mówimy i co myślimy, lecz to jak postępujemy. Walka o naszą lepsza przyszłość rozgrywa się już dziś. Platforma na której się znajdujesz pomoże Ci lepiej dostosować się do współczesnego świata. Poznasz ryzyka i perspektywy jakie daje nam rynek finansowy. Dołącz do naszej społeczności i rozwijaj się razem z nami. Aktywnie zwiększamy naszą wiedzę i dążymy do tego by być komplementarni nie tylko w świecie finansów ale również tematach pokrewnych jak energia odnawialna czy rozwój i wdrażanie nowych technologi.</h1>
               </div>
             </section>
+            <div class="container-calendar">
+              <hr />
+              <h1>Najbliższe wydarzenia</h1>
+            </div>
             <div id="forcecentered">
               <div class="event-list bd-highlight">
           
@@ -411,17 +416,33 @@
                   </div>
               </div>
               <a class="btn nextbtn" href="#"><i class="fa fa-chevron-right"></i></a>
-          
+              
 
-            
-
-            <footer>
+            <!-- <footer>
                 <section class="footerContainer">
                     
                 </section>
-            </footer>
+            </footer> -->
 
         </main>
+
+        <section class="contact-form">
+          <hr />
+          <h1>Formularz kontaktowy</h1>
+
+          <form action="">
+            <input type="text" id="fname" name="fname" placeholder="Imię">
+            <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
+            <input type="text" id="topic" name="topic" placeholder="Temat"><br><br>
+            <input type="text" id="content" name="content" placeholder="Treść"><br><br>
+
+            <a href="readpage/readpage.html" class="slide-content-cta hover" style="color:black; border-left: 1px solid black; border-right: 1px solid black;">Wyślij</a>
+          </form>
+        </section>
+
+        <section class="footer">
+          
+        </section>
 
 <script src="calendar/caleandar.js"></script>
 <script src="calendar/demo.js"></script>
