@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
 * {
@@ -30,13 +31,14 @@ nav {
 }
 
 
+
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 16% auto;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
-    "sidebar rightpage";
+    "rightpage";
 }
 
 .sidebar {
@@ -157,7 +159,7 @@ header {
 }
 
 .containerHome {
-    background-image: url(/images/gradient2.png);
+    background-image: url(/images/readpageROR.png);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,31 +204,61 @@ header {
 }
 
 .titleContent p{
-    width:60vw;
+    width: 1037px;
+    height: 89px;
+    left: 174px;
+    top: 710px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 153.4%;
+    /* or 31px */
+
+    text-align: center;
+
+    color: #000000;
+
 }
 
 /* HERO */
 
 .hero {
     width:80vw;
+    margin:0 auto;
     display:grid;
     grid-area:hero;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px 100px;
     padding:40px;
     font-family:rift-soft,sans-serif;
 }
+.hero1, .hero2, .hero3, .hero4, .hero5, .hero6, .hero7 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
 
-.hero7 {
-    background-color: gray;
-    background-size:cover;
+    letter-spacing: 0.03em;
+
+    color: #000000;
 }
 
-.hero6:nth-child(2n) {
-    background-color: gray;
-    background-size:cover;
-    grid-row: span 2;
+.hero4 h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom:30px;
+    /* or 121% */
+
+    letter-spacing: 0.055em;
+
+    color: #2E6171;
 }
 
 footer {
@@ -293,3 +325,19 @@ footer {
         margin-top:-40px;
     }
 }
+
+a {
+    background: none repeat scroll 0 0 black;
+    border: medium none;
+    color: #FFFFFF;
+    height: 50px;
+    font-family: 'Montserrat';
+    right:0;
+    text-align:center;
+    padding:5px;
+    margin-top:200px;
+    border-top-left-radius:10px;
+    position: fixed;
+    top: 100px;
+    width: 100px;
+  }

@@ -205,3 +205,4 @@ function controls(frameWidth, scollWidth){
         //$(".slider-container").css("left", scollWidth);
     });
 };
+
