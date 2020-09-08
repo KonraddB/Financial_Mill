@@ -28,10 +28,10 @@
         <header>
             <div class="container">
             <div class="row">
-                <div class="brand-name" style="margin-left:-270px !important">
+                <div class="brand-name">
                     <img onclick="openNav()" src="images/financialmil_biale_RGB-01.png" alt="">
                 </div>
-                <div class="navbar" style="margin-right:-300px !important">
+                <div class="navbar">
                 <ul>
                         <li><a href="#" class="active">Strona główna</a></li>
                         <li><a href="/blog/blog.html">Blog</a></li>
@@ -68,7 +68,7 @@
                             <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
                         </div>
                         <div class="slide-content">
-                            <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p style="font-size:20px !important; margin-top:40px; text-transform: lowercase !important;">{{ slide.headlineSecondLine }}</p></h1><a href="readpage/readpage.html" class="slide-content-cta">Czytaj dalej</a></div>
+                            <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p style="font-size:20px !important; margin-top:40px; text-transform: lowercase !important;">{{ slide.headlineSecondLine }}</p></h1><a v-bind:href="slide.hrefLink" class="slide-content-cta">Czytaj dalej</a></div>
                         <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} </span></h2></div>
                 </div>
             <div class="controls-container">

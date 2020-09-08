@@ -10,7 +10,8 @@ var app = new Vue({
               headlineSecondLine: "Jedno oko na maroko drugie w banku",
               sublineFirstLine: "#bankowość",
               bgImg: "images/eye-3440464_1920.jpg",
-              rectImg: "images/eye-3440464_1920.jpg"
+              rectImg: "images/eye-3440464_1920.jpg",
+              hrefLink: "readpageoko/readpage.html"
           },
           {
               headlineFirstLine: "Rachunek Oszczędnościwo-Rozliczeniowy",
@@ -18,7 +19,8 @@ var app = new Vue({
               // sublineFirstLine: "Il n'y a rien de neuf sous",
               // sublineSecondLine: "le soleil",
               bgImg: "images/piggy-bank-2889046_1920.jpg",
-              rectImg: "images/piggy-bank-2889046_1920.jpg"
+              rectImg: "images/piggy-bank-2889046_1920.jpg",
+              hrefLink: "readpageror/readpage.html"
           },
           {
               headlineFirstLine: "Lokata",
@@ -26,8 +28,18 @@ var app = new Vue({
               // sublineFirstLine: "Τίποτα καινούργιο κάτω από",
               // sublineSecondLine: "τον ήλιο",
               bgImg: "images/ice-cubes-3506781_1920.jpg",
-              rectImg: "images/ice-cubes-3506781_1920.jpg"
-          }
+              rectImg: "images/ice-cubes-3506781_1920.jpg",
+              hrefLink: "readpagelokata/readpage.html"
+          },
+          {
+            headlineFirstLine: "Obligacje",
+            headlineSecondLine: "Chcesz być właścicielem Polski? Nie ma problemu?",
+            // sublineFirstLine: "Τίποτα καινούργιο κάτω από",
+            // sublineSecondLine: "τον ήλιο",
+            bgImg: "images/key-2486606_1920.jpg",
+            rectImg: "images/key-2486606_1920.jpg",
+            hrefLink: "readpageobligacje/readpage.html"
+        }
       ]
   },
 mounted: function () {
