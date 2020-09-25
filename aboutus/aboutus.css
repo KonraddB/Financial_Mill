@@ -45,17 +45,156 @@ body {
 .mask {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 0 14%;
   background-color: rgba(0, 12, 53, 0.5);
+  width: 100%;
+  height: 100%;
+  padding-top: 250px;
 }
 
 .about h2 {
   font-size: 70px;
+  margin-bottom: 75px;
 }
 
 .about p {
   font-size: 20px;
   text-align: center;
+}
+
+.way {
+  padding: 150px 140px 100px 140px;
+}
+
+.way-header {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.way-card {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  background-color: #2e3033;
+  padding: 50px;
+  grid-gap: 50px;
+}
+
+.way-card-p-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.way-card p {
+  color: white;
+  height: 100%;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.way-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.meet-header-contener {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meet h2 {
+  font-size: 70px;
+}
+
+.meet-cards {
+  padding: 135px 0;
+}
+
+.card-1-header {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.card-background {
+  background-color: #2e3033;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 25%;
+  height: 75%;
+}
+
+.card-1-middle {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 40px 40px 0 40px;
+}
+
+.card-1-img {
+  margin-right: 30px;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 9px;
+  width: 100%;
+}
+
+.card-inner h4 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 33.5% 1fr;
+  width: 100%;
+}
+
+.info {
+  box-sizing: inherit;
+  display: grid;
+  grid-template-rows: auto;
+  height: fit-content;
+  grid-gap: 15px;
+}
+
+.info-inner {
+  height: 65px;
+  background-color: white;
+  box-sizing: inherit;
+  display: flex;
+  grid-template-rows: 65px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-inner p {
+  text-align: center;
+}
+
+.card-p-bottom {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 40px;
 }
