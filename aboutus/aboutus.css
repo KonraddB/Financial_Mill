@@ -1,300 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-html,body {
-    height: 100%;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-img {
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width:100%;
-    height:auto;
+html {
+  box-sizing: border-box;
 }
 
-nav {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    width: 100%;
-    padding-bottom:20px;
-}
-
-
+html,
 body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 16% auto;
-    grid-template-rows: fit-content(120px) 1fr auto;
-    grid-template-areas: 
-    "sidebar head"
-    "sidebar rightpage"
-    "sidebar footer";
-}
-
-.sidebar {
-    grid-area: sidebar;
-    background-color: #ffffff;
-    color: #fff;
-    font-family: rift-soft, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-}
-
-.blueArt {
-    font-family: 'Roboto Condensed', sans-serif;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(49,68,85);
-    height: 35px;
-    /* padding-top:15px;
-    padding-left: 50px; */
-    text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    margin-top:20px;
-    list-style-type: none;
-    float:right;
-    margin-right: 30px;
-}
-
-ul li {
-    display:none;
-}
-
-ul li.active {
-    display:none;
-}
-
-ul li.show{
-    display:inline;
-}
-
-/* ul li {
-    display: none;
-} */
-/* 
-ul li.show{
-    display: inline;
-} */
-
-ul li a {
-    color: rgb(204,123,70);
-    padding: 20px;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-ul li a.active {
-    color:black;
-}
-
-i {
-    font-size: 40px;
-    float:right;
-}
-
-header {
-    background-color: #ffffff;
-    display: grid;
-    grid-area:head;
-    grid-template-columns: auto;
+  height: 100%;
 }
 
 .main {
-    display:grid;
-    grid-area:rightpage;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
+  display: initial;
 }
-
-/* CALENDAR */
-
-.h1Calendar {
-    font-family: 'Roboto', sans-serif;
-    display:flex;
-    color:rgb(204,123,70);
-    margin-top:20px;
-    margin-bottom:15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap:wrap;
-    font-size: 18px;
-    height: 35px;
-    /* padding-top:15px;
-    padding-left: 50px; */
-    text-transform: uppercase;
-}
-/* HERO */
 
 /* FIRST SECTION */
 
-.hero {
-    background-color: #ffffff;
-    color: black;
-    font-family: rift-soft, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    width:100%;
-    height:100%;
+.about {
+  max-height: 577px;
+  background-color: black;
+  color: white;
+  background-image: url(../../images/about_us.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 14%;
 }
 
-.hero hr {
-    margin-top:50px;
-    width:10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: 1px solid black;
+.about h2 {
+  font-size: 70px;
 }
 
-.hero p {
-    margin-top:50px;
-    width: 80%;
-    text-align: center;
-    margin-left:auto;
-    margin-right: auto;
-}
-
-.card {
-    width: 100%;
-    height:250px;
-    margin-top:100px;
-    border:none !important;
-    font-family: 'Roboto', sans-serif;
-}
-
-.aboutus {
-    text-align: left !important;
-    width:95% !important;
-}
-
-.card-body {
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-title p {
-    width:100%;
-    font-size: 42px;
-    text-shadow: black;
-}
-
-.card-body hr {
-    margin-top:0;
-    width:30%;
-    border-top: 1px solid black;
-
-}
-
-.card-body-img {
-    background-image: url(/images/gradient2.png);
-    opacity: 0.9;
-    height:100%;
-    height:250px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-body-img p {
-    margin-top:-20px;
-    height:100%;
-    font-size:16px;
-    color:white;
-    width:60%;
-    margin-left:auto;
-    margin-right: auto;
-}
-
-.about-button {
-    background-image: url(/images/gradient2.png);
-     position: absolute;
-     margin-top:20px;
-     color:white;
-     text-transform: uppercase;
-     left:50%;
-     transform: translate(-50%,-50%);
-     width:20%;
-     height:40px;
-     border-radius: 25px;
-     border:none;
-}
-
-footer {
-    display:grid;
-    grid-template-rows: 120px;
-    grid-area:footer;
-    background: rgb(195,206,216);
-}
-
-@media screen and (max-width: 768px) {
-    
-    .sidebar {
-        display:none;
-    }
-
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-columns: auto;    ;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "head"
-        "rightpage"
-        "footer";
-    }
-
-    .main {
-        grid-area:rightpage;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-        display:grid;
-        grid-template-areas: 
-        'hero'
-        'rightbar';
-        overflow-y:scroll;
-    }    
-
-    .card {
-        margin-top:30px;
-    }
-
-    ul {
-        width:80%;
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items:center;
-    }
-
-    .titleDiv {
-        height:400px;
-        margin-top:20px;
-        width:100%;
-    }
-
-    .containerNews {
-        margin-left:50px;
-    }
-    
+.about p {
+  font-size: 20px;
+  text-align: center;
 }
