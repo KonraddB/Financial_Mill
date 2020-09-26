@@ -308,3 +308,127 @@ body {
     right: -200px;
   }
 }
+
+/* Tablet - 768 */
+@media only screen and (max-width: 768px) {
+  .way {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .way-card {
+    padding: 40px;
+    grid-gap: 40px;
+  }
+
+  .meet-header-contener {
+    height: 100px;
+  }
+
+  .about {
+    max-height: 400px;
+  }
+
+  .about h2 {
+    margin-bottom: 30px;
+  }
+
+  .mask {
+    padding-top: 165px;
+  }
+
+  .about h2,
+  .way-header,
+  .meet h2 {
+    font-size: 40px;
+  }
+
+  .way-header {
+    margin-bottom: 20px;
+  }
+
+  .way-card p {
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 14px;
+  }
+
+  .grid,
+  .info {
+    grid-gap: 10px;
+  }
+
+  .card-1-header-container h3,
+  .card-2-header-container h3 {
+    font-size: 40px;
+  }
+
+  .card-1-middle {
+    padding: 30px 20px 0 20px;
+  }
+
+  .card-p-bottom {
+    font-size: 12px;
+  }
+
+  .card-1-img,
+  .card-2-img {
+    max-width: 220px;
+  }
+
+  .card-1-img {
+    margin-right: 20px;
+  }
+
+  .card-2-img {
+    margin-left: 20px;
+  }
+
+  .info-inner {
+    height: 40px;
+  }
+
+  .info-inner p {
+    font-size: 13px;
+  }
+
+  .card-inner h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .card-1 {
+    margin-left: 80px;
+    padding-bottom: 20px;
+  }
+
+  .card-2 {
+    margin-right: 80px;
+  }
+
+  .card-1-middle {
+    margin-bottom: 10px;
+  }
+
+  .card-2 .card-p-bottom {
+    padding-bottom: 20px;
+  }
+
+  .card-1-header-container {
+    left: -155px;
+  }
+
+  .card-2-header-container {
+    right: -155px;
+  }
+
+  .card-1-header-container,
+  .card-2-header-container {
+    bottom: 107px;
+  }
+
+  .card-1-header-container h3,
+  .card-2-header-container h3 {
+    font-size: 35px;
+  }
+}
