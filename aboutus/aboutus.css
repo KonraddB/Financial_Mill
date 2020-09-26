@@ -111,13 +111,22 @@ body {
   font-size: 70px;
 }
 
-.meet-cards {
-  padding: 135px 0;
+.card-1-header-container {
+  bottom: 137px;
+  left: -237px;
+  position: absolute;
+  width: fit-content;
+  transform: rotate(-90deg);
 }
 
-.card-1-header {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+.card-1-header-container hr {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.card-1-header-container h3 {
+  font-size: 50px;
+  font-weight: 500;
 }
 
 .card-1 {
@@ -125,6 +134,7 @@ body {
   flex-direction: column;
   position: relative;
   padding-bottom: 40px;
+  margin-left: 150px;
 }
 
 .card-background {
