@@ -92,6 +92,7 @@ body {
   height: 100%;
   line-height: 24px;
   letter-spacing: 1px;
+  text-align: justify;
 }
 
 .way-card img {
@@ -244,4 +245,66 @@ body {
 
 .card-2 .card-p-bottom {
   padding-bottom: 40px;
+}
+
+/*********************
+  Media Query
+**********************/
+/* Laptop - 1024 */
+@media only screen and (max-width: 1024px) {
+  .way {
+    padding: 150px 50px 100px 50px;
+  }
+
+  .meet-header-contener {
+    height: 160px;
+  }
+
+  .about h2 {
+    margin-bottom: 60px;
+  }
+
+  .about h2,
+  .way-header,
+  .meet h2 {
+    font-size: 60px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+
+  .card-1-header-container h3,
+  .card-2-header-container h3 {
+    font-size: 45px;
+  }
+
+  .card-p-bottom {
+    font-size: 14px;
+  }
+
+  .card-1-img,
+  .card-2-img {
+    max-width: 350px;
+  }
+
+  .info-inner {
+    height: 55px;
+  }
+
+  .card-1 {
+    margin-left: 120px;
+  }
+
+  .card-2 {
+    margin-right: 120px;
+  }
+
+  .card-1-header-container {
+    left: -200px;
+  }
+
+  .card-2-header-container {
+    right: -200px;
+  }
 }
