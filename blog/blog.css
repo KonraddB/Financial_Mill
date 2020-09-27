@@ -1,50 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
 
 * {
     box-sizing: border-box;
     margin:0;
-	padding:0;
-	font-family:'Roboto', sans-serif;
-}
-
-html,body {
-    height: 100%;
-}
-
-img {
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width:100%;
-    height:auto;
-}
-
-
-body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "rightpage";
-}
-
-
-.blueArt {
-    font-family: 'Roboto Condensed', sans-serif;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(49,68,85);
-    height: 35px;
-    color:white;
-    /* padding-top:15px;
-    padding-left: 50px; */
-    text-transform: uppercase;
+    padding:0;
+    font-family:'Montserrat', sans-serif;
 }
 
 /*Header*/
@@ -55,8 +16,7 @@ header{
 	right:0px;
 	border-bottom: 1px solid #ffffff;
 	padding:0px 15px;
-    z-index:11;
-    max-height:82.6px;
+  z-index:11;
 }
 header.fixed{
 	background-color: rgba(0, 0, 0, 0.8);
@@ -126,825 +86,202 @@ header .navbar ul li a::before{
    transition: all .5s ease;
 }
 
-
-
-
 header .navbar ul li a:hover{
     color: white;
     text-shadow: 1px 1px 1px white;
     font-size:20px;
 }
 
-/* SIDEBAR */
-.sidenav {
-  margin-top:80px;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 101;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+/* HERO SECTION */
+
+.container-top-img{
+  width:100%;
+  height:570px;
+  background-image: url('../images/blog_top.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
+.container-top-img h1 {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+  width: 100%;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-/*Home Section*/
-
-
-.main {
-    grid-area:rightpage;
-    grid-template-rows:100vh auto;
-    display:grid;
-    grid-template-areas: 
-    'home'
-    'latestposts'
-    'nearestschool'
-    'withus'
-    'footer';
-}
-
-/* CALENDAR */
-
-.h1Calendar {
-    font-family: 'Roboto', sans-serif;
-    display:flex;
-    color:white;
-    margin-top:20px;
-    margin-bottom:15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap:wrap;
-    font-size: 18px;
-    height: 35px;
-    /* padding-top:15px;
-    padding-left: 50px; */
-    text-transform: uppercase;
-}
-
-/* rightpage - home sectiomn */
-
-.home {
-    height:50vh !important
-}
-
-.containerHome {
-    background-image: url(/images/main_blog.png);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity:0.8;
-    z-index:1;
-    position: absolute;
-    height:50%;
-    min-width:100%;
-}
-
-.home .caption {
-    width : 100%;
-    height:50%;
-    text-align: center;
-    padding:100px;
-    margin-top:70px;
-    font-family: rift-soft, sans-serif;
-}
-
-.home .caption .h2Blog {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 70px;
-    line-height: 85px;
-    text-align: center;
-    
-    color: #FFFFFF;
-}
-
-.h1Blog {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 31px;
-    text-align: center;
-    margin-top:50px;
-    color: #FFFFFF;
-}
-
-
-/*
-PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
-http://stackoverflow.com/a/34696029/383904
-*/
-
-.CSSgal {
-	position: relative;
-	overflow: hidden;
-	height: 100%; /* Or set a fixed height */
-}
-
-/* SLIDER */
-
-.CSSgal .slider {
-	height: 100%;
-	white-space: nowrap;
-	font-size: 0;
-	transition: 0.8s;
-}
-
-/* SLIDES */
-
-.CSSgal .slider > * {
-	font-size: 1rem;
-	display: inline-block;
-	white-space: normal;
-	vertical-align: top;
-	height: 100%;
-	width: 100%;
-	background-position: 50% 0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* .CSSgal .slider .sliderImage {
-    opacity: 0.8;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-} */
-
-
-.removeStyles {
-    
-}
-
-/* PREV/NEXT, CONTAINERS & ANCHORS */
-
-.CSSgal .prevNext {
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	width: 100%;
-	height: 0;
-}
-
-.CSSgal .prevNext > div+div {
-	visibility: hidden; /* Hide all but first P/N container */
-}
-
-.CSSgal .prevNext a {
-	position: absolute;
-	width:       60px;
-	height:      60px;
-	line-height: 60px; /* If you want to place numbers */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 85px;
   text-align: center;
-  color:white;
-  font-size:40px;
-  text-shadow:1px 1px 1px white;
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-	-webkit-transform: translateY(-50%);
-					transform: translateY(-50%);
-	left: 0;
-}
-.CSSgal .prevNext a:hover {
-	opacity: 1;
-}
-.CSSgal .prevNext a+a {
-	left: auto;
-	right: 0;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
 }
 
-/* NAVIGATION */
+.container-top-img p {
+  position: absolute;
+  width: 60%;
+  left:50%;
+  top:67%;
+  transform: translate(-50%, -50%);
 
-.CSSgal .bullets {
-	position: absolute;
-	z-index: 2;
-	bottom: 0;
-	padding: 10px 0;
-	width: 100%;
-	text-align: center;
-}
-.CSSgal .bullets > a {
-	display: inline-block;
-	width:       15px;
-	height:      15px;
-	line-height: 15px;
-	text-decoration: none;
-	text-align: center;
-	background: rgba(255, 255, 255, 1);
-	-webkit-transition: 0.3s;
-					transition: 0.3s;
-}
-.CSSgal .bullets > a+a {
-	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
-}
-.CSSgal .bullets > a:hover {
-	background: rgba(255, 255, 255, 0.7) !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: center;
+
+  color: #FFFFFF;
 }
 
-/* NAVIGATION BUTTONS */
-/* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
-/* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
-/* More slides? Add here more rules */
-
-/* PREV/NEXT CONTAINERS VISIBILITY */
-/* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-/* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
-/* More slides? Add here more rules */
-
-/* SLIDER ANIMATION POSITIONS */
-
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
-/* More slides? Add here more rules */
-
-
-/* YOU'RE THE DESIGNER! 
-   ____________________
-   All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
-
-.CSSgal{
-	color: #fff;	
-	text-align: center;
+.container-hero {
+  margin-top:50px;
+  display:grid;
+  grid-template-rows:500px;
+  grid-template-columns:75% 25%;
+  grid-template-areas:
+  "lefthero righthero";
 }
 
-.CSSgal .slider p {
-	margin-top: 35vh;
-	font-weight: 200;
-	letter-spacing: -0.06em;
-	word-spacing: 0.2em;
-	font-size: 2em;
+.container-left-hero {
+  grid-area: lefthero;
+  width:100%;
+  height:100%;
 }
 
-.CSSgal .slider h2 {
-	margin-top: 10px;
-	font-weight: 200;
-	letter-spacing: -0.06em;
-	word-spacing: 0.2em;
-	font-size: 3em;
+.container-right-hero {
+  grid-area: righthero;
+  width:100%;
+  height:100%;
+  border-left: 1px solid #2E3033;
 }
 
-.CSSgal .slider h3 {
-	margin-top: 10px;
-	font-weight: 200;
-	letter-spacing: -0.06em;
-	word-spacing: 0.2em;
-	font-size: 2em;
-}
-
-.CSSgal a {
-	border-radius: 50%;
-	margin: 0 3px;
-	color: rgba(0,0,0,0.8);
-	text-decoration: none;
-}
-
-
-
-
-/* latestposts */
-
-.latestposts {
-    background-color: #ffffff;
-    font-family: rift-soft , sans-serif;
-    color: rgb(204,123,70);
-    grid-area:'latestposts';
-    display:grid;
-    width:80%;
-    margin:auto;
-    position: relative;
-    overflow-x: hidden !important;
-}
-
-.latestposts h1:nth-child(1) {
-    opacity:0.5;
-    font-size:16px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    text-transform: uppercase;
-}
-
-.containerLatest {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    margin-left:15px;
-    margin-right:30px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 350px;
-    font-family: arial;
-    background-color: #ffffff;
-    color:black;
-    margin-bottom:30px;
-  }
-  
-.backgroundCard {
-    background-color: green;
-    height:150px;
-    width:350px;
-}
-
-#imageCard1 {
-    background-image: url(/images/image1.png);
-}
-
-.h1Card {
-    margin-top: 30px;
-    padding-left: 25px;
-    color:white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.pCard {
-    margin-top:15px;
-    padding-left: 25px;
-    font-weight: 700;
-}
-
-.bottomCard {
-    height: 100px;
-}
-
-.bottomCard a {
-    float:right;
-    padding-right: 25px;
-    margin-top:15px;
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-/* nearestschool */
-
-.nearestschool {
-    background-color: #ffffff;
-    grid-area:'nearestschool';
-    font-family:rift-soft, sans-serif;
-}
-
-.nearestschool h1:nth-child(1) {
-    opacity:0.5;
-    font-size:16px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    text-transform: uppercase;
-    color: rgb(204,123,70);
-}
-
-.containerNearest {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    margin-left:15px;
-    margin-right:30px;
-}
-
-/* withus */
-
-.withus {
-    background-color: #ffffff;
-    grid-area: 'withus';
-    font-family:rift-soft, sans-serif;
-}
-
-.withus h1:nth-child(1) {
-    opacity:0.5;
-    font-size:16px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 15px;
-    text-transform: uppercase;
-    color: rgb(204,123,70);
-}
-
-.containerWith {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left:15px;
-    margin-right:30px;
-    margin-bottom: 30px;
-}
-
-/* footer */
-
-footer {
-    grid-area:footer;
-    background: rgb(195,206,216);
-}
-
-/* MOBILE  */
-
-@media screen and (max-width:1180px) {
-    .home .caption {
-        padding:0;
-        margin-top:20px;
-    }
-
-    .h1Calendar {
-        margin-bottom:50px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .home .slide.active{
-        position: absolute;
-        width:100%;
-    }
-    .home {
-        font-size:14px;
-    }
-
-    .home .caption .h2Blog {
-        font-size: 18px;
-        text-transform: lowercase;
-        color:black;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-        margin-bottom: 20px;
-    }
-    
-    .h1Blog {
-        font-size: 52px;
-        margin-bottom: 40px;
-    }
-
-    .sidebar {
-        display:none;
-    }
-
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "rightpage";
-    }
-
-    .card {
-        margin-top:30px;
-    }
-
-    ul {
-        width:80%;
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items:center;
-    }
-    
-}
-
-.containerCard {
+.container-left-hero .container-button {
   display:flex;
-  flex-direction: row;
-  font-family: 'Roboto', sans-serif;
-  color:black;
+  justify-content: space-around;
+  width:100%;
 }
 
-.containerCard img {
-  margin-top:50px;
-  width:600px;
-  height:300px;
-  border-radius:10px;
+.container-left-hero .container-button button {
+  flex-basis:30%;
+  height:68px;
+  background: #2E3033;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border:none;
+  color:#FFFFFF;
+  font-size:2vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight:700;
 }
 
-.containerCard .bodyCard {
+.container-left-hero .container-card {
   margin-top:50px;
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+}
+
+.container-left-hero .container-card .card {
+  flex-basis:30%;
+  height:380px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-left-hero .container-card .card .card-top{
+  height:50%;
+  width:100%;
+  background: red;
+}
+
+.container-left-hero .container-card .card .card-top:nth-child(1){
+  height:50%;
+  width:100%;
+  background: url('../images/piggy-bank-2889046_1920.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-left-hero .container-card .card .card-bottom {
+  height:50%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-left-hero .container-card .card .card-bottom .card-bottom-container {
+  width:90%;
+  margin:0 auto;
+}
+
+.container-left-hero .container-card .card .card-bottom .card-bottom-container h4{
+  font-weight: 800;
+  font-size: 15px;
+  padding-top:18px;  
+  color: #2E3033;
+}
+
+.container-left-hero .container-card .card .card-bottom .card-bottom-container .first-p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  padding-top:18px;  
+  color: #2E3033;
+  float:left;
+}
+
+.container-left-hero .container-card .card .card-bottom .card-bottom-container .second-p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  padding-top:18px;  
+  color: #2E3033;
+  float:right;
+}
+
+
+.container-left-hero .container-card .card .card-bottom .card-bottom-container .third-p{
+  font-weight: 300;
+  font-size: 13px;
   padding-top:50px;
-  width:600px;
-  height:300px;
+  color: #2E3033;
 }
 
-.containerCard .bodyCard h1,p {
-  width:80%;
-  text-align: center;
-  margin:auto;
+.container-left-hero .container-card .card .card-bottom .card-bottom-container .third-p{
+  font-weight: 300;
+  font-size: 13px;
+  padding-top:50px;
+  color: #2E3033;
 }
 
-.containerCard .bodyCard h1 {
-  font-size: 22px;
-  padding-bottom:20px;
-  text-shadow:2px 2px 2px grey;
+.container-left-hero .container-card .card .card-bottom .card-bottom-container button{
+  background: #2E3033;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  float:right;
+  color:#FFFFFF;
+  width:40%;
+  height: 27px;
+  margin-top:25px;
+  font-weight: 500;
+  font-size: 12px;
+  border:none;
 }
 
-footer{
-  margin-top:50px !important;
-}
-* {
-	margin: 0;
-	padding: 0;
-}
-.slider-frame {
-	position: relative;
-	margin: 0 auto;
-    overflow: hidden;
-    max-height: 231px;
-    top:0;
-}
-.slider-frame .btn {
-	width: 40px;
-	height: 231px;
-	background: rgba(0, 0, 0, 0.3);
-	position: absolute;
-	top: 0;
-	z-index: 1000;
-}
-.slider-frame .btn.prev {
-	left: 0px;
-}
-.slider-frame .btn.next {
-    right: 0px;
-
-}
-.slider-frame .slider-container {
-	transition: margin-left 0.2s ease, left 0.5s ease;
-    left: 0;
-    height:231px;
-}
-.slider-frame .slider-container .slide {
-	background-color: white;
-	float: left;
-	position: relative;
-    top: 0;
-    padding-right:5px;
-	transition: width 0.2s ease, height 0.2s ease, top 0.2s ease;
+.container-left-hero .container-card .card .card-bottom .card-bottom-container button:hover{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  color:#2E3033;
+  border:none;
 }
 
-.slider-frame .slider-container .slide:hover {
-    background-color:white;
-    transition: 0.18s ease-in-out;
-
+.container-right-hero h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #2E3033;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align:center;
 }
-.slider-frame .slider-container .slide:nth-child(even) {
-	background-color: white;
-}
-
-.card-block .btn-outline-primary {
-    width: 100%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-  }
-  
-  .slide {
-    background: white;
-    margin-top: 40px;
-    height: 100%;
-    width: 25%;
-    transition: 0.6s all ease;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:0 !important;
-
-  }
-  
-  .cardTop {
-    transition: 0.4s all ease;
-    height: 231px;
-    background: url(/images/slider_one.png)
-      no-repeat;
-      background-size:cover;
-    margin-top:0 !important;
-    display:flex;
-    justify-content: center;
-  }
-  
-  .cardTop1 {
-    transition: 0.4s all ease;
-    height: 231px;
-    background: url(/images/slider_two.png)
-      no-repeat;
-      background-size:cover;
-    margin-top:0 !important;
-    display:flex;
-    justify-content: center;
-  }
-
-  .cardTop2 {
-    transition: 0.4s all ease;
-    height: 231px;
-    background: url(/images/slider_three.png)
-      no-repeat;
-      background-size:cover;
-    margin-top:0 !important;
-    display:flex;
-    justify-content: center;
-  }
-
-  .cardTop p {
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-
-  }
-
-  .cardTop1 p {
-    width: 276px;
-    height: 38px;
-    left: 201px;
-    top: 931px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 44px;
-
-    color: #FFFFFF;
-
-  }
-
-  .cardTop2 p {
-    width: 276px;
-    height: 38px;
-    left: 201px;
-    top: 931px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 44px;
-
-    color: #FFFFFF;
-
-  }
-  
-  .cardBottom {
-    height: 0px;
-    transition: 0.4s all ease;
-  }
-  
-  .cardText {
-    height:0;
-    padding: 20px;
-  }
-  
-  .cardTitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    margin:15px 0 15px 0;
-    line-height: 21px;
-  }
-  
-  .cardInfo {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 8px;
-    line-height: 10px;
-    /* identical to box height */
-    margin:15px 0 15px 0;
-
-    color: #000000;
-  }
-  
-  /* Hidding the entire so anything we put in will only show on hover */
-  
-  .cardHoverText {
-    visibility: hidden;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    margin:15px 0 15px 0;
-
-    color: #000000;
-  }
-
-  .readbutton {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 153.4%;
-    /* or 23px */
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    text-align: right;
-    width:130px;
-    padding:10px;
-    padding-right:20px;
-    padding-left:-100px;
-    color: black;
-    margin-top:20px;
-  }
-
-  .readbutton:hover {
-    color: white;
-    background-color: rgba(0, 0, 0, 1);
-  }
-  
-  
-  /* Hover affects */
-  
-  .slide:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  }
-  
-  /* Using className + hover followed by child element allows you to change child elements when parent is hovered */
-  
-  .slide:hover .cardHoverText {
-    visibility: visible;
-    transition: 0.4s all ease;
-    transition-delay: 0.1999s;
-  }
-  
-
-  .slide:hover .cardBottom {
-    transition: 0.4s all ease;
-    height: 75%;
-    opacity: 1;
-  }
-  
-  .slide:hover .cardTop {
-    height: 25%;
-    opacity: 0.8;
-    transition: 0.4s all ease;
-  }
-
-  .slide:hover .cardTop1 {
-    height: 50%;
-    opacity: 0.8;
-    transition: 0.4s all ease;
-  }
-
-  .slide:hover .cardTop2 {
-    height: 50%;
-    opacity: 0.8;
-    transition: 0.4s all ease;
-  }
-
-  .hero h1 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 85px;
-    
-    color: #2E6171;
-    margin:155px 0 56px 52px;
-  }
-  
