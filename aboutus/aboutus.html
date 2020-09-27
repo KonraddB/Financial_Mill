@@ -1,92 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e71073d474.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e71073d474.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Financial Mill</title>
-    <link rel="stylesheet" href="./aboutus.css">
-    <link rel="stylesheet" href="../calendar/theme1.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="materialize.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- Start Header -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="brand-name">
+              <img
+                onclick="openNav()"
+                src="images/financialmil_biale_RGB-01.png"
+                alt="Financial Mill logo"
+              />
+            </div>
+            <div class="navbar">
+              <ul>
+                <li><a href="#" class="active">Strona główna</a></li>
+                <li><a href="/blog/blog.html">Blog</a></li>
+                <li><a href="/aboutus/aboutus.html">O mnie</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
 
-        <div class="sidebar">
-            <img src="../images/financialmil_czarne_RGB-01.png" alt="Financial_Mill_logo">
-            <div class="blueArt"><p>bądź na bieżąco</p></div>
-            <h1 class="h1Calendar">Kalendarz naszych wydarzeń</h1>
-            <div id="caleandar"></div>
+      <section class="about">
+        <div class="mask">
+          <h2>O nas</h2>
+          <p>
+            Jeżeli chcesz poszerzać swoje horyzonty razem z nami, dobrze byłoby
+            gdybyś trochę nas poznał. Jaka jest nasza motywacja i co chcemy
+            osiągnąć robiąc to co robimy!
+          </p>
+        </div>
+      </section>
+
+      <section class="way">
+        <h2 class="way-header">
+          Droga do spełniania <br />
+          naszych celów
+        </h2>
+        <div class="way-card">
+          <div class="way-card-p-container">
+            <p>
+              Financial Mill, czyli finansowy młyn zapewni Ci cotygodniową
+              wiedzę nt. rynków finansowych Zarówno początkujący egzystent życia
+              finansowego, jak i pionier w tej dziedzinie może znaleźć tu coś
+              dla siebie. Chce rozpowszechniać szeroko rozumianą tematykę
+              związaną z oszczędzaniem oraz pomnażaniem oszczędności. W
+              przyszłości chcemy stworzyć platformę do inwestowania na zupełnie
+              innych zasadach niż ma to miejsce obecnie. Wierzymy, że ucząc się
+              i działając możemy to osiągnać. Po drodze chcemy dzielić się z
+              czytelnikami oraz pomagać im w utrzymaniu zdrowej kondycji
+              finansowej.
+            </p>
+          </div>
+          <div>
+            <img
+              src="../images/financialmil_biale.png"
+              alt="Financial Mill logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="meet">
+        <div class="meet-header-contener">
+          <h2>Poznaj nas bliżej</h2>
+        </div>
+        <div class="card-1">
+          <div class="meet-cards">
+            <div class="card-1-header-container">
+              <hr />
+              <h3>Maciej Młyński</h3>
+            </div>
+            <div class="card-background"></div>
+            <div class="card-1-middle">
+              <img
+                class="card-1-img"
+                src="../images/Maciej.png"
+                alt="Financial Mill logo"
+              />
+              <div class="card-inner">
+                <h4>Podstawowe dane</h4>
+                <div class="grid">
+                  <div class="info">
+                    <div class="info-inner">
+                      <p>Wykształcenie</p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Zawód</p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Specjalność</p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Certyfikaty</p>
+                    </div>
+                  </div>
+
+                  <div class="info">
+                    <div class="info-inner">
+                      <p></p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Doradca finansowy</p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Specjalista ds. kredytów oraz ubezpieczeń</p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Akademia MDDP</p>
+                      <p>Wdrażanie IP BOX oraz B+R</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-p-bottom">
+              Praca doradcy finansowego daje mi możliwość ciągłego rozwoju. Nie
+              samą jendak pracą człowiek żyje. Daje z siebie co moge właśnie po
+              to by w przyszłości mieć więcej czasu na rzeczy które kocham,
+              czyli moja rodzina oraz sport. Nigdy nie kręciły mnie szybkie fury
+              i drogi sprzęt. Wole żyć skromnie, a wolny czas poświęcać
+              doskonaleniu. Pogłębianie wiedzy sprawia mi radość, a dzielenie
+              się nią daje mi siłę aby uczyć się dalej. Moim celem jest stworzyć
+              usługi doradctwa finansowego na niespotykanym dotąd poziomie.
+            </p>
+          </div>
         </div>
 
-        <header>
-            <nav>
-                <ul>
-                    <li class="liNav"><a href="/index.html">Strona główna</a></li>
-                        <li class="liNav"><a href="/blog/blog.html">blog</a></li>
-                        <li class="liNav"><a class="active" href="/aboutus/aboutus.html">o nas</a></li>
-                        <li class="liNav"><a href="#">kontakt</a></li>
-                    <i class="fas fa-bars"></i>
-                </ul> 
-            </nav>
-        </header>
-
-        <main class="main">
-            <section class="hero">
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis doloribus veritatis, perspiciatis magni nisi, beatae commodi voluptas distinctio alias quaerat accusantium quibusdam. Quae hic veniam corporis asperiores. Eos, ab! Libero!</p>
-                <div class="container-card">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <p class="aboutus">Trochę więcej o nas ...</p>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <div class="card-title"><p>Maciek Młyński</p>
-                                    <hr>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body-img">
-                                    <div class="card-title"><p>Specjalista w dziedzinie rynku kapitałowego i kredytowego</p>
-                                        <button class="about-button">Szkolenia</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="card-2">
+          <div class="meet-cards relative">
+            <div class="card-2-header-container">
+              <hr />
+              <h3>Jakub Mącyński</h3>
+            </div>
+            <div class="card-background"></div>
+            <div class="card-1-middle">
+              <div class="card-inner">
+                <h4>Podstawowe dane</h4>
+                <div class="grid">
+                  <div class="info">
+                    <div class="info-inner">
+                      <p>Wykształcenie</p>
                     </div>
-                </div>
-
-                <div class="container-card">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-6">
-                                <div class="card-body-img">
-                                    <div class="card-title"><p>Absolwent studiów licencjackich i Finansów i Rachunkowości na Uniwersytetcie Ekonomiczym w Krakowie. Coroczny stypendysta nagrody lektora.</p>
-                                        <button class="about-button">E-BOOK</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <div class="card-title"><p>Jakub Mączyński</p>
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="info-inner">
+                      <p>Zawód</p>
                     </div>
+                    <div class="info-inner">
+                      <p>Specjalność</p>
+                    </div>
+                    <div class="info-inner">
+                      <p>Certyfikaty</p>
+                    </div>
+                  </div>
+
+                  <div class="info">
+                    <div class="info-inner">
+                      <p></p>
+                    </div>
+                    <div class="info-inner">
+                      <p></p>
+                    </div>
+                    <div class="info-inner">
+                      <p></p>
+                    </div>
+                    <div class="info-inner">
+                      <p></p>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </main>
+              </div>
+              <img
+                class="card-2-img"
+                src="../images/Jakub.png"
+                alt="Financial Mill logo"
+              />
+            </div>
+            <p class="card-p-bottom">
+              czesc jestem kuba i tn no czesc jestem kuba i tn noczesc jestem
+              kuba i tn noczesc jestem kuba i tn noczesc jestem kuba i tn
+              noczesc jestem kuba i tn noczesc jestem kuba i tn noczesc jestem
+              kuba i tn noczesc jestem kuba i tn noczesc jestem kuba i tn
+              noczesc jestem kuba i tn noczesc jestem kuba i tn noczesc jestem
+              kuba i tn no
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <footer>
-            <section class="footerContainer">
-                
-            </section>
-        </footer>
+    <footer>
+      <section class="footerContainer"></section>
+    </footer>
 
-<script src="../calendar/caleandar.js"></script>
-<script src="../calendar/demo.js"></script>
-<script src="/script.js"></script>
-</body>
+    <script src="../calendar/caleandar.js"></script>
+    <script src="../calendar/demo.js"></script>
+    <script src="/script.js"></script>
+  </body>
 </html>
