@@ -1352,9 +1352,10 @@ footer {
 }
 
 .flip-card-front {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   color: black !important;
   z-index: 2;
@@ -1492,9 +1493,10 @@ footer {
 }
 .event-dash-card {
   border: none;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .event-dash-card-icon {
   font-size: 14px;
@@ -1642,6 +1644,7 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
+    margin-bottom: 70px;
   }
 
   .flip-card {
@@ -1711,6 +1714,7 @@ form {
     padding: 0;
     height: 60px;
     line-height: 14px;
+    max-width: 100px;
   }
 
   header .brand-name img {
@@ -1742,12 +1746,50 @@ form {
   }
 
   .container-card {
-    margin: 0 60px;
+    margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   .flip-card-front h3 {
     font-size: 40px;
     width: auto;
     height: auto;
+  }
+
+  .image-container {
+    width: auto;
+  }
+
+  .contact-form {
+    width: 800px;
+  }
+
+  .card .card-title {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .event-list div {
+    height: 325px;
+  }
+}
+
+/* Tablet - 320 */
+@media only screen and (max-width: 320px) {
+  header {
+    width: 800px;
+  }
+
+  header .navbar ul li a {
+    font-size: 24px;
+  }
+
+  .slide-content {
+    margin-top: 2rem;
+  }
+
+  .slide-side-text {
+    left: calc(20vw - -4rem);
   }
 }
