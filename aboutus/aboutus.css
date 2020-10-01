@@ -177,7 +177,8 @@ body {
   height: 75%;
 }
 
-.card-1-middle {
+.card-1-middle,
+.card-2-middle {
   display: flex;
   margin-bottom: 40px;
   padding: 40px 40px 0 40px;
@@ -367,7 +368,7 @@ body {
     margin-bottom: 50px;
   }
 
-  .card-1-middle {
+  .card-1-middle .card-2-middle {
     padding: 30px 20px 0 20px;
   }
 
@@ -410,7 +411,8 @@ body {
     margin-right: 80px;
   }
 
-  .card-1-middle {
+  .card-1-middle,
+  .card-2-middle {
     margin-bottom: 10px;
   }
 
@@ -436,7 +438,7 @@ body {
     font-size: 35px;
   }
 
-  /* Mobile M - 768 */
+  /* Mobile L - 425 */
   @media only screen and (max-width: 425px) {
     .card-1-header-container,
     .card-2-header-container {
@@ -457,7 +459,8 @@ body {
     .way-header,
     .meet h2,
     .card-1-header-container h3,
-    .card-2-header-container h3 {
+    .card-2-header-container h3,
+    .card-inner h4 {
       font-size: 25px;
     }
 
@@ -533,6 +536,102 @@ body {
     .card-p-bottom {
       text-align: justify;
       padding: 0 20px;
+    }
+  }
+
+  /* Mobile S - 320 */
+  @media only screen and (max-width: 320px) {
+    .about h2,
+    .way-header,
+    .meet h2,
+    .card-1-header-container h3,
+    .card-2-header-container h3,
+    .card-inner h4 {
+      font-size: 20px;
+    }
+
+    .mask p {
+      font-size: 10px;
+    }
+
+    .mask h2 {
+      margin-bottom: 15px;
+    }
+
+    .about {
+      max-height: 200px;
+    }
+
+    .mask {
+      padding-top: 85px;
+    }
+
+    .way {
+      padding: 10px 20px 10px 20px;
+    }
+
+    .way-header {
+      margin-bottom: 10px;
+    }
+
+    .card-1 {
+      margin-bottom: 10px;
+    }
+
+    .way-card {
+      padding: 20px;
+    }
+
+    .way-card img {
+      height: 170px;
+    }
+
+    .way-card-p-container {
+      margin-bottom: 20px;
+    }
+
+    .way-card p {
+      font-size: 11px;
+    }
+
+    .meet-header-contener {
+      height: 55px;
+    }
+
+    .card-1-header-container,
+    .card-2-header-container {
+      margin-top: 20px;
+    }
+
+    .card-1-middle,
+    .card-2-middle {
+      padding: 10px 20px 0 20px;
+    }
+
+    .card-inner h4 {
+      margin-bottom: 10px;
+    }
+
+    .card-2-middle {
+      flex-direction: column-reverse;
+    }
+
+    .card-1-img,
+    .card-2-img {
+      margin: 0;
+      max-width: 175px;
+    }
+
+    .card-p-bottom {
+      font-size: 12px;
+    }
+
+    .info-inner {
+      height: 37px;
+    }
+
+    .info-inner p {
+      font-size: 12px;
     }
   }
 }
