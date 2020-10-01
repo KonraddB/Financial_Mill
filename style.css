@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
 html {
   box-sizing: border-box;
@@ -21,7 +20,6 @@ html {
   letter-spacing: 0.12rem;
   font-size: 0.7rem;
   line-height: 1;
-  margin-top:80px !important;
 }
 [v-cloak] {
   opacity: 0;
@@ -1042,6 +1040,17 @@ http://stackoverflow.com/a/34696029/383904
   margin-top: 70px;
 }
 
+.latestposts-h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2E3033;
+    padding-bottom: 50px;
+}
+
 .image-container {
   height: 100vh;
   width: 100vw;
@@ -1297,42 +1306,32 @@ p {
   text-shadow: 2px 2px 2px grey;
 }
 
-.latestposts-h1 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 70px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #2E3033;
-    margin-bottom: 100px;
-    margin-left: 15px;
-}
-
 footer {
   margin-top: 50px !important;
 }
 .container-card {
-  width: 80%;
-  height: 1000px;
+  width: 87%;
+  height: 100%;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: space-between;
+  margin-bottom:250px;
 }
 .flip-card {
   background-color: transparent;
-  width: 400px;
+  flex-basis:30%;
   height: 260px;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  flex-basis:30%;
+  width: 450px;
+  height: 280px;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -1357,10 +1356,8 @@ footer {
 }
 
 .flip-card-front {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  width:100%;
+  height: 100%;
   box-sizing: border-box;
   color: black !important;
   z-index: 2;
@@ -1369,50 +1366,42 @@ footer {
   align-items: center;
 }
 
-  .flip-card-front img {
-    width: 130px;
-    height: 130px;
-    margin-top: 20px;
-  }
-  
-  .flip-card-back {
-    background: #2E3033;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);    
-    color: black;
-    transform: rotateY(180deg);
-    z-index: 1;
+.flip-card-front img {
+    width: 239px;
+    height: 192px;
 
-  }
+}
+
+.flip-card-back {
+  background:rgba(0, 0, 0, 0.8);
+  color: black;
+  transform: rotateY(180deg);
+  z-index: 1;
+  margin-left:3px;
+}
 
 .flip-card-back h3 {
+  margin-top: 70px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 40px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
   text-align: center;
   color: #ffffff;
-  letter-spacing: 0.05em;
 }
 
 .flip-card-back p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 31px;
   text-align: center;
   color: #ffffff;
-  width:90%;
-  margin-bottom: 20px;
 }
 
 .flip-card-front h3 {
-  width: 307px;
-  height: 78px;
-  left: 337px;
-  top: 226px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
@@ -1641,18 +1630,19 @@ form {
 
   .container-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 40px;
     margin-bottom: 70px;
+    height:2500px;
   }
 
   .flip-card {
     background-color: transparent;
     width: 550px;
     height: 400px;
+    margin:0 auto;
     perspective: 1000px;
-    width: 100%;
-    height: 100%;
+
   }
 
   .flip-card-front,

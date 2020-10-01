@@ -72,19 +72,6 @@ mounted: function () {
 })
 
 
-// navbar
-
-const header = document.querySelector('header');
-
-const liNav = document.querySelectorAll('.liNav');
-const btnNav = document.querySelector('fa-bars');
-
-header.addEventListener('click', function() {
-    for (var i = 0; i < liNav.length; i++) {
-        liNav[i].classList.toggle("show");
-      }
-})
-
 // header fixed
 
 window.onscroll=function(){
