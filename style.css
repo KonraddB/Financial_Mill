@@ -1356,7 +1356,8 @@ footer{
   
   .flip-card-back {
     background: #2E3033;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);    color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);    
+    color: black;
     transform: rotateY(180deg);
     z-index: 1;
 
