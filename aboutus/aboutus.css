@@ -72,7 +72,7 @@ body {
 .way-header {
   text-align: center;
   font-size: 70px;
-  margin-bottom: 50px;
+  margin: 70px 0;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
@@ -139,6 +139,18 @@ body {
   letter-spacing: 0.05em;
 
   color: #2E3033;
+}
+
+.card-1-header-container hr {
+  margin-bottom:20px;
+}
+
+.card-2-header-container hr {
+  margin-top: -20px;
+}
+
+.card-1-header-container {
+  transform: rotate(-90deg) !important;
 }
 
 .card-1-header-container,
