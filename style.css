@@ -136,6 +136,14 @@ body ::-moz-selection {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width:1791px) {
+  .slide-content-text p {
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
 @media (max-width: 1000px) {
   .slide-content {
     left: calc(13vw + 1rem);
