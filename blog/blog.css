@@ -14,16 +14,16 @@ header{
 	position: absolute;
 	left:0px;
 	right:0px;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 	padding:0px 15px;
-  z-index:11;
+	z-index:1111;
 }
 header.fixed{
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #ffffff;
 	position: fixed;
-	border-color: black;
+	border-color: #eeeeee;
 	animation: fixHeader .5s ease;
-	z-index: 11;
+	z-index: 1111;
 }
 
 @keyframes fixHeader{
@@ -31,48 +31,49 @@ header.fixed{
 		transform: translateY(-100%);
 	}
 	100%{
-	transform: translateY(-0%);	
+	transform: translateY(-%);	
 	}
 }
 
 header .row{
 	justify-content: space-between;
-	align-items: center;
+  align-items: center;
+  width: 90%;
+  margin:0 auto;
 }
-header .brand-name img{
+header .brand-name a{
    text-decoration: none;
+   font-size: 22px;
+   font-weight: 600;
    color:#ffffff;
    text-transform: uppercase;
-   position: absolute;
-   margin-top:-10px;
-   width:100px;
-   height:100px;
+   position: relative;
 }
 header.fixed .brand-name a{
-    color:black;
+	color:#000000;
 }
 header .navbar ul{
 	list-style: none;
 	padding:0;
-    margin:0;
-    float:right;
-    margin-right:20px;
+  margin:0;
+  float:right;
 }
 header .navbar ul li{
 	display: inline-block;
 	margin-left:35px;
 }
 header .navbar ul li a{
-	font-size: 17px;
+	font-size: 16px;
 	text-decoration: none;
-	line-height: 82px;
-	color:#ffffff;
+	line-height: 72px;
+  color:#ffffff;
+  font-family: 'Montserrat';
 	display: block;
-	font-weight: 600;
+	font-weight: 500;
 	position: relative;
 }
 header.fixed .navbar ul li a{
-  color:#ffffff;
+  color:#000000;
 }
 
 header .navbar ul li a::before{
@@ -85,10 +86,95 @@ header .navbar ul li a::before{
    bottom:-1px;
    transition: all .5s ease;
 }
+header.fixed .navbar ul li a::before{
+	background-color: #febd01;
+}
+header .navbar ul li a:hover::before{
+	width:100%;
+	left:0;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+	left:0;
+}
 
-header .navbar ul li a:hover{
-    color: white;
-    font-size:20px;
+header .brand-name img {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: -5px;
+  width: 85px;
+  height: 85px;
+}
+
+@media(max-width: 991px){
+  .home .home-content .block h1{
+    font-size: 50px;
+  }
+
+}
+
+@media(max-width: 767px){
+ .home .home-content .block h1{
+    font-size: 40px;
+  }
+  .home .home-content .block h3{
+    font-size:25px;
+  }
+ header{
+   padding:15px;
+   position: fixed;
+   background-color: #ffffff;
+   border: none;
+   border-bottom:1px solid #eeeeee;
+ }
+header .brand-name a{
+  color:#000000;
+}    
+    .ham-burger .fa{
+      display: inline-block;
+    }
+    .navbar{
+      position: absolute;
+       background-color: #ffffff;
+       width: 100%;
+       left: 0px;
+       top:50px;
+       padding:15px;
+       border-top:1px solid #eeeeee;
+       display: none;
+       border-bottom:1px solid #eeeeee;
+    }
+    .navbar.show{
+      display: block;
+    }
+
+    header .navbar ul {
+      float:initial !important;
+    }
+
+    header .navbar ul li{
+      display: block;
+      margin-left:0;
+    }
+    header .navbar ul li a{
+      line-height:42px;
+      color:#000000;
+    }
+    header .navbar ul li a::before{
+      background-color:#febd01;
+    }
+
+    header .container .row .ham-burger {
+      display:block !important;
+    }
+
+    header .brand-name img {
+      display:none;
+    }
+
+
 }
 
 /* HERO SECTION */

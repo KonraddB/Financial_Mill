@@ -24,32 +24,34 @@
         </div>
 
         <main class="main">
-          <!-- Start Header -->
-          <header>
-            <div class="container">
-            <div class="row">
-                <div class="brand-name">
-                    <img onclick="openNav()" src="images/financialmil_biale_RGB-01.png" alt="">
-                </div>
-                <div class="navbar">
-                <ul>
-                        <li><a href="#" class="active">Strona główna</a></li>
-                        <li><a href="/blog/blog.html">Blog</a></li>
-                        <li><a href="/aboutus/aboutus.html">O mnie</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                </ul>
-                </div>
+      <!-- Start Header -->
+      <header>
+        <div class="container-nav">
+          <div class="row">
+            <div class="brand-name">
+              <img src="../images/financialmil_biale_RGB-01.png" alt="" />
             </div>
+            <div class="ham-burger" style="display:none;">
+              <i class="fa fa-bars"></i>
             </div>
-          </header>
-                <div class="nav-right visible-xs">
+            <div class="navbar">
+              <ul>
+                <li><a href="index.html" class="active">Strona główna</a></li>
+                <li><a href="/blog/blog.html">Blog</a></li>
+                <li><a href="/aboutus/aboutus.html">O nas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+                <!-- <div class="nav-right visible-xs">
           <div class="button" id="btn">
             <div class="bar top"></div>
             <div class="bar middle"></div>
             <div class="bar bott om"></div>
           </div>
         </div>
-<!-- nav-right -->
+nav-right -->
 
 
             <section class="home">
@@ -67,7 +69,7 @@
                             <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
                         </div>
                         <div class="slide-content">
-                            <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p style="font-size:20px !important; margin-top:40px; text-transform: lowercase !important;">{{ slide.headlineSecondLine }}</p></h1><a v-bind:href="slide.hrefLink" class="slide-content-cta">Czytaj dalej</a></div>
+                            <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a v-bind:href="slide.hrefLink" class="slide-content-cta">Czytaj dalej</a></div>
                         <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} </span></h2></div>
                 </div>
             <div class="controls-container">
@@ -94,8 +96,8 @@
                     <img src="images/main_text_1.png" alt="">
                   </div>
                   <div class="flip-card-back">
-                    <h3>Edukacja</h3>
-                    <p>Rozkładamy skomplikowane procesy finansowe na czynniki pierwsze i przekazujemy wam wiedzę w prostej i zrozumiałej postaci.</p>
+                    <h3>Wydarzenia</h3>
+                    <p>W kalendarzu znajdziesz najbliższe wydarzenia ze świata finansów oraz nasze przyszłe projekty tj. szkolenia online, spotkania przedsiębiorców czy prelekcje, na których będziesz mógł nas zobaczyć.</p>
                   </div>
                 </div>
               </div>
@@ -106,8 +108,8 @@
                     <img src="images/main_text_2.png" alt="">
                   </div>
                   <div class="flip-card-back">
-                    <h3>Szkolenia</h3>
-                    <p>Sposób w jaki przedstawiamy wam wiedzę oparty jest na technikach Tony'ego Buzana, który uważany jest za twórce map myśli i rysunków opartych na skojarzeniach.</p>
+                    <h3>Blog</h3>
+                    <p>Mamy nadzieję, że każdy kolejny wpis będzie ciekawszy, a wszelkie niezrozumiałe kwestie będą dla Ciebie czymś oczywistym. Wierzymy, że nasz blog pozwoli Ci się wkręcić w świat finansów, aż wreszcie oszalejesz na jego punkcie tak jak i my. </p>
                   </div>
                 </div>
               </div>
@@ -118,8 +120,8 @@
                     <img src="images/main_text_3.png" alt="">
                   </div>
                   <div class="flip-card-back">
-                    <h3>Współpraca</h3>
-                    <p>Zachęcamy do komentowaniai udostępniania naszych wpisów. Dzięki temu masz realny wpływ na emitowany przez nasz kontent</p>
+                    <h3>O nas</h3>
+                    <p>Dwóch gniewnym, którzy potrafią nie wpasować się w schemat. Świat finansów jest dla nich tym, co pokochali od pierwszego spotkania. Nie uwierzą w nic, dopóki sami tego nie przeanalizują.</p>
                   </div>
                 </div>
               </div>
@@ -130,8 +132,8 @@
                     <img src="images/main_text_4.png" alt="">
                   </div>
                   <div class="flip-card-back">
-                    <h3>Konsultacje</h3>
-                    <p>Umów się na bezpłatną konsultacjeze specjalistą. Pomożemy Ci w planowaniui realizacji Twoich celów.</p>
+                    <h3>Szkolenia</h3>
+                    <p>Chcemy podzielić się z Tobą naszą wiedzą. W niedalekiej przyszłości na stronie pojawią się szkolenia bazujące na mapach myśli.  Naszym zadaniem jest rozłożenie skomplikowanych procesów finansowych w proste i zrozumiałe treści.</p>
                     <a href="readpage/readpage.html" class="slide-content-cta" style="margin-left:-15px;">Czytaj dalej</a>
                   </div>
                 </div>
@@ -143,8 +145,8 @@
                     <img src="images/main_text_5.png" alt="">
                   </div>
                   <div class="flip-card-back">
-                    <h3>O nas</h3>
-                    <p>Dwóch gniewnym, którzy potrafią nie wpasować się w schemat. Świat finansów jest dla nich tym, co pokochali od pierwszego spotkania. Nie uwierzą w nic, dopóki sami tego nie przeanalizują.</p>
+                    <h3>Współpraca</h3>
+                    <p>Zachęcamy Cię, do bycia częścią naszego projektu. Każdy zamieszczony przez Ciebie komentarz będzie dla nas podpowiedzią w jakim kierunku powinniśmy zmierzać.</p>
                     <a href="readpage/readpage.html" class="slide-content-cta" style="margin-left:-15px;">Czytaj dalej</a>
                   </div>
                 </div>
@@ -156,8 +158,8 @@
                     <img src="images/main_text_6.png" alt="">
                   </div>
                   <div class="flip-card-back">
-                    <h3>Wydarzenia</h3>
-                    <p>W kalendarzu znajdziesz najbliższe wydarzenia ze świata finansów oraz nasze przyszłe projekty tj. szkolenia online, spotkania przedsiębiorców czy prelekcje, na których będziesz mógł nas zobaczyć.</p>
+                    <h3>Konsultacje</h3>
+                    <p>Chcesz z nami porozmawiać o czymś, czego jeszcze nie poruszaliśmy lub chcesz dowiedzieć się czegoś więcej? Zgłoś się do nas za pomocą formularza zgłoszeniowego.</p>
                     <a href="readpage/readpage.html" class="slide-content-cta" style="margin-left:-15px;">Czytaj dalej</a>
                   </div>
                 </div>
@@ -168,7 +170,10 @@
                 <div class="image-container">
                   <p>Co nam przyniesie przyszłość ?</p>
                 </div>
-                <h1>Jak będą funkcjonowały rynki finansowe?<br><br> W jakim systemie przyjdzie nam żyć?<br><br> Czy za za 20 lat nie będzie już gotówki?<br><br> Czy może czeka nas gigantyczny krach finansowy?<br><br> W tych kwestiach możemy jedynie spekulować nawet przez kolejną dekadę. Nie ma znaczenia jednak co mówimy i co myślimy, lecz to jak postępujemy. Walka o naszą lepsza przyszłość rozgrywa się już dziś. Platforma na której się znajdujesz pomoże Ci lepiej dostosować się do współczesnego świata. Poznasz ryzyka i perspektywy jakie daje nam rynek finansowy. Dołącz do naszej społeczności i rozwijaj się razem z nami. Aktywnie zwiększamy naszą wiedzę i dążymy do tego by być komplementarni nie tylko w świecie finansów ale również tematach pokrewnych jak energia odnawialna czy rozwój i wdrażanie nowych technologi.</h1>
+                <h1>Jak będą funkcjonowały rynki finansowe?<br><br> Czy za 20 lat gotówka będzie jedynie pamiątką w świecie elektronicznych rozliczeń?
+                  <br><br>Kiedy nastąpi kolejny kryzys finansowy?
+                  <br><br><p class="p-text">W tych kwestiach możemy jedynie wcielić się w rolę spekulantów. Nie ma znaczenia jednak co mówimy i co myślimy, lecz to jak postępujemy. Podróż o naszą lepsza przyszłość rozgrywa się już dziś. Platforma, na której się znajdujesz pomoże Ci lepiej dostosować się do problemów oraz wyzwań współczesnego świata. Poznasz ryzyka i perspektywy jakie dają nam rynki finansowe. Dołącz do naszej społeczności i rozwijaj się razem z nami.</p>
+                </h1>
               </div>
             </section>
             <div class="container-calendar">
@@ -177,233 +182,77 @@
             </div>
             <div id="forcecentered">
               <div class="event-list bd-highlight">
-          
-                  <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">25</span>
-                      <small>OCT <br/>
-                        4:30</small>
-                      </h1>
-                      <p class="card-text">New Orleans Jazz & Herritage Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/95.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/16.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+99</span></a></li>
-          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-          
-          
-                  <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">27</span>
-                      <small>OCT <br/>
-                        3:00</small>
-                      </h1>
-                      <p class="card-text">Coachella Valley Music and Arts Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/27.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+80</span></a></li>
-          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-          
-          
-          
-                  <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">28</span>
-                      <small>OCT <br/>
-                        1:00</small>
-                      </h1>
-                      <p class="card-text">San Francisco Tape Music Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/86.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/57.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/66.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+49</span></a></li>
-          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-          
-          
-                  <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">29</span>
-                      <small>OCT <br/>
-                        5:30</small>
-                      </h1>
-                      <p class="card-text">Festival Pavilion, Fort Mason Center for Arts & Culture</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+45</span></a></li>
-          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">30</span>
-                      <small>OCT <br/>
-                        7:00</small>
-                      </h1>
-                      <p class="card-text">Noir City: San Francisco Film Noir Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/26.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+99</span></a></li>
-          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-          <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">30</span>
-                      <small>OCT <br/>
-                        7:00</small>
-                      </h1>
-                      <p class="card-text">Noir City: San Francisco Film Noir Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/26.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+99</span></a></li>
-          
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+
                 <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">30</span>
-                      <small>OCT <br/>
-                        7:00</small>
-                      </h1>
-                      <p class="card-text">Noir City: San Francisco Film Noir Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/26.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+99</span></a></li>
-          
-                        </ul>
-                      </div>
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="event-dash-card-icon"><img src="./images/calendar9.png" alt=""> </span><span class="day">05.10.2020</span>
+                    <img class="icon-calendar" src="./images/icon_calendar.png" alt="">
+                    <small> 18:00<br/>
+                      </small>
+                    </h1>
+                    <p class="card-text">Nowy wpis pt. “Fundusze inwestycyjne otwarte cz. II”</p>
+                    <div class="card-footer">
+                      <p>Autor <br/> Jakub Mączynski</p>
                     </div>
                   </div>
+                </div>
+             
                 <div class="card event-dash-card">
-                    <div class="card-body">
-                      <h1 class="card-title"><span class="event-dash-card-icon"><i class="fa fa-calendar"></i> </span><span class="day">30</span>
-                      <small>OCT <br/>
-                        7:00</small>
-                      </h1>
-                      <p class="card-text">Noir City: San Francisco Film Noir Festival</p>
-                      <div class="card-footer">
-                        <ul class="guest-list">
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/men/26.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Guests" /></a>
-                          </li>
-                          <li>
-                            <a href="#"><img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Guests" /></a>
-                          </li>
-                          <li><a href="#"><span>+99</span></a></li>
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="event-dash-card-icon"><img src="./images/calendar9.png" alt=""> </span><span class="day">07.10.2020</span>
+                    <img class="icon-calendar" src="./images/icon_calendar_maciej.png" alt="">
+                    <small> 18:00<br/>
+                      </small>
+                    </h1>
+                    <p class="card-text">Kolejna książka pt. “Strategia Błękitnego Oceanu”poddana analizie</p>
+                    <div class="card-footer">
+                      <p>Autor <br/> Maciej Młyński</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card event-dash-card">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="event-dash-card-icon"><img src="./images/calendar9.png" alt=""> </span><span class="day">10.10.2020</span>
+                    <img class="icon-calendar" src="./images/icon_calendar.png" alt="">
+                    <small> 18:00<br/>
+                      </small>
+                    </h1>
+                    <p class="card-text">Nowy wpis pt. “Kreacja pieniądza”</p>
+                    <div class="card-footer">
+                      <p>Autor <br/> Jakub Mączyński</p>
+                    </div>
+                  </div>
+                </div>
           
-                        </ul>
+                <div class="card event-dash-card">
+                  <div class="card-body">
+                    <h1 class="card-title"><span class="event-dash-card-icon"><img src="./images/calendar9.png" alt=""> </span><span class="day">15.10.2020</span>
+                    <img class="icon-calendar" src="./images/icon_calendar_maciej.png" alt="">
+                    <small> 18:00<br/>
+                      </small>
+                    </h1>
+                    <p class="card-text">Analiza książki pt. “Jim Simons, człowiek który rozszyfrował rynki finansowe”</p>
+                    <div class="card-footer">
+                      <p>Autor <br/> Maciej Młyński</p>
+                    </div>
+                  </div>
+                </div>
+          
+                  <div class="card event-dash-card">
+                    <div class="card-body">
+                      <h1 class="card-title"><span class="event-dash-card-icon"><img src="./images/calendar9.png" alt=""> </span><span class="day">20.10.2020</span>
+                      <img class="icon-calendar" src="./images/icon_calendar.png" alt="">
+                      <small> 18:00<br/>
+                        </small>
+                      </h1>
+                      <p class="card-text">Nowy wpis pt. “Fundusze Inwestycyjne Zamknięte”</p>
+                      <div class="card-footer">
+                        <p>Autor <br/> Jakub Mączynski</p>
                       </div>
                     </div>
                   </div>
-              </div>
-              <a class="btn nextbtn" href="#"><i class="fa fa-chevron-right"></i></a>
+
               
 
             <!-- <footer>

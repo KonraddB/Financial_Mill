@@ -8,7 +8,7 @@ var app = new Vue({
           {
               headlineFirstLine: "Otwarte Konto Oszczędnościowe",
               headlineSecondLine: "Jedno oko na maroko drugie w banku",
-              sublineFirstLine: "#bankowość",
+              sublineFirstLine: "#bankowość #wpis",
               bgImg: "images/eye-3440464_1920.jpg",
               rectImg: "images/eye-3440464_1920.jpg",
               hrefLink: "readpageoko/readpage.html"
@@ -72,6 +72,7 @@ mounted: function () {
 })
 
 
+
 // header fixed
 
 window.onscroll=function(){
@@ -85,30 +86,30 @@ window.onscroll=function(){
     document.querySelector("header").classList.remove("fixed")	
     }
   }
-}    
+} 
 
 
 // navbar links
 
 const navbar = document.querySelector(".navbar");
-    a=navbar.querySelectorAll("a");
-    
-    a.forEach(function(element){
-       element.addEventListener("click",function(){
-          for(let i=0; i<a.length; i++){
-            a[i].classList.remove("active");
-          }
-         this.classList.add("active")
-         document.querySelector(".navbar").classList.toggle("show");
-       })
+a=navbar.querySelectorAll("a");
+
+a.forEach(function(element){
+    element.addEventListener("click",function(){
+     for(let i=0; i<a.length; i++){
+         a[i].classList.remove("active");
+     }
+        this.classList.add("active")
+        document.querySelector(".navbar").classList.toggle("show");
     })
+})
 
 // ham-burger
 
 const hamBurger=document.querySelector(".ham-burger");
 
 hamBurger.addEventListener("click",function(){
-     document.querySelector(".navbar").classList.toggle("show");
+document.querySelector(".navbar").classList.toggle("show");
 })
 
 // slider home

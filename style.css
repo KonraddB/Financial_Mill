@@ -15,7 +15,6 @@ html {
 .slide-side-text,
 .controls-button {
   font-family: "Montserrat";
-  text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.12rem;
   font-size: 0.7rem;
@@ -116,11 +115,21 @@ body ::-moz-selection {
   font-size: 15px !important;
 }
 
+.slide-content-text p {
+  font-weight: 900;
+}
+
+.slide-content-text p:nth-child(2) {
+  font-size:30px;
+  margin-top:80px;
+  font-weight:700;
+}
+
 .slide-content {
   color: #fff;
   margin-top: 5rem;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 80% !important;
   left: 50px;
   transform: translateY(-50%);
@@ -235,7 +244,7 @@ body ::-moz-selection {
   position: absolute;
   font-size: 16px;
   left: calc(20vw - 3rem);
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr !important;
   top: calc((50% - (28vh / 2)) + (5vh / 2));
 }
 @media (max-height: 790px) {
@@ -641,89 +650,172 @@ body {
 
 /*Header*/
 
-header {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  border-bottom: 1px solid #ffffff;
-  padding: 0px 15px;
-  z-index: 11;
-  max-height: 82.6px;
+header{
+	position: absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	padding:0px 15px;
+	z-index:1111;
 }
-header.fixed {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  border-color: black;
-  animation: fixHeader 0.5s ease;
-  z-index: 11;
-}
-
-@keyframes fixHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(-0%);
-  }
+header.fixed{
+	background-color: #ffffff;
+	position: fixed;
+	border-color: #eeeeee;
+	animation: fixHeader .5s ease;
+	z-index: 1111;
 }
 
-header .row {
-  justify-content: space-between;
+@keyframes fixHeader{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+	transform: translateY(-%);	
+	}
+}
+
+header .row{
+	justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin:0 auto;
 }
+header .brand-name a{
+   text-decoration: none;
+   font-size: 22px;
+   font-weight: 600;
+   color:#ffffff;
+   text-transform: uppercase;
+   position: relative;
+}
+header.fixed .brand-name a{
+	color:#000000;
+}
+header .navbar ul{
+	list-style: none;
+	padding:0;
+  margin:0;
+  float:right;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left:35px;
+}
+header .navbar ul li a{
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 72px;
+  color:#ffffff;
+  font-family: 'Montserrat';
+	display: block;
+	font-weight: 500;
+	position: relative;
+}
+header.fixed .navbar ul li a{
+  color:#000000;
+}
+
+header .navbar ul li a::before{
+   content: '';
+   height: 3px;
+   background-color: #ffffff;
+   width:0%;
+   position: absolute;
+   right:0px;
+   bottom:-1px;
+   transition: all .5s ease;
+}
+header.fixed .navbar ul li a::before{
+	background-color: #febd01;
+}
+header .navbar ul li a:hover::before{
+	width:100%;
+	left:0;
+}
+header .navbar ul li a.active::before{
+	width:100%;
+	left:0;
+}
+
 header .brand-name img {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   position: absolute;
-  margin-top: -10px;
-  width: 100px;
-  height: 100px;
-}
-header.fixed .brand-name a {
-  color: black;
-}
-header .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
-  margin-right: 20px;
-}
-header .navbar ul li {
-  display: inline-block;
-  margin-left: 35px;
-}
-header .navbar ul li a {
-  font-size: 20px;
-  text-decoration: none;
-  line-height: 82px;
-  color: #ffffff;
-  display: block;
-  font-weight: 600;
-  position: relative;
-}
-header.fixed .navbar ul li a {
-  color: #ffffff;
+  margin-top: -5px;
+  width: 85px;
+  height: 85px;
 }
 
-header .navbar ul li a::before {
-  content: "";
-  height: 3px;
-  background-color: #ffffff;
-  width: 0%;
-  position: absolute;
-  right: 0px;
-  bottom: -1px;
-  transition: all 0.5s ease;
+@media(max-width: 991px){
+  .home .home-content .block h1{
+    font-size: 50px;
+  }
+
 }
 
-header .navbar ul li a:hover {
-  color: white;
-  text-shadow: 1px 1px 1px white;
-  font-size: 20px;
+@media(max-width: 767px){
+ .home .home-content .block h1{
+    font-size: 40px;
+  }
+  .home .home-content .block h3{
+    font-size:25px;
+  }
+ header{
+   padding:15px;
+   position: fixed;
+   background-color: #ffffff;
+   border: none;
+   border-bottom:1px solid #eeeeee;
+ }
+header .brand-name a{
+  color:#000000;
+}    
+    .ham-burger .fa{
+      display: inline-block;
+    }
+    .navbar{
+      position: absolute;
+       background-color: #ffffff;
+       width: 100%;
+       left: 0px;
+       top:50px;
+       padding:15px;
+       border-top:1px solid #eeeeee;
+       display: none;
+       border-bottom:1px solid #eeeeee;
+    }
+    .navbar.show{
+      display: block;
+    }
+
+    header .navbar ul {
+      float:initial !important;
+    }
+
+    header .navbar ul li{
+      display: block;
+      margin-left:0;
+    }
+    header .navbar ul li a{
+      line-height:42px;
+      color:#000000;
+    }
+    header .navbar ul li a::before{
+      background-color:#febd01;
+    }
+
+    header .container-nav .row .ham-burger {
+      display:block !important;
+    }
+
+    header .brand-name img {
+      display:none;
+    }
+
 }
+
 
 /* SIDEBAR */
 .sidenav {
@@ -1054,7 +1146,7 @@ http://stackoverflow.com/a/34696029/383904
 .image-container {
   height: 100vh;
   width: 100vw;
-  background-image: url("images/tomasz-frankowski-kBUfvkbFIoE-unsplash (1).jpg");
+  background-image: url("./images/Group68.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1062,10 +1154,10 @@ http://stackoverflow.com/a/34696029/383904
 }
 
 .image-container p {
-  width: 1216px;
+  width: 50%;
   height: 66px;
   left: 114px;
-  padding-top: 300px;
+  padding-top: 390px;
 
   font-family: "Montserrat";
   font-style: normal;
@@ -1079,21 +1171,35 @@ http://stackoverflow.com/a/34696029/383904
 
 .container-section h1 {
   margin-top: 120px !important;
-  margin-bottom: 120px !important;
-  width: 1037px;
+  margin-bottom: 30px !important;
+  width: 60%;
   height: 381px;
   left: 223px;
   top: 586px;
   margin: 0 auto;
 
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 153.4%;
+  /* or 37px */
+
+  text-align: center;
+
+  color: #2E3033;
+}
+
+.container-section .p-text {
+  width:100%;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 31px;
   text-align: center;
 
-  color: #3b3e45;
+  color: #2E3033;
 }
 
 .containerLatest {
@@ -1264,11 +1370,9 @@ footer {
   }
 
   ul {
-    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -1381,24 +1485,26 @@ footer {
 }
 
 .flip-card-back h3 {
-  margin-top: 70px;
-  font-family: "Montserrat";
+  margin-top: 10px;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 153.4%;
   text-align: center;
-  color: #ffffff;
+  letter-spacing: 0.05em;
+  color:#ffffff;
 }
 
 .flip-card-back p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 31px;
-  text-align: center;
-  color: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 153.4%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom:20px;
 }
 
 .flip-card-front h3 {
@@ -1428,7 +1534,7 @@ footer {
 }
 .event-list div {
   float: left;
-  width: 300px;
+  width: 360px;
   height: 300px;
   margin: 10px;
 }
@@ -1485,14 +1591,34 @@ footer {
     0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
-.event-dash-card-icon {
+.event-dash-card-icon img {
   font-size: 14px;
   vertical-align: top;
+  width:30px;
+  height:30px;
+  margin: 0 10px;
+  margin-top:-2px;
+}
+
+.event-dash-card .card-body .icon-calendar {
+  position: absolute;
+  top:15px;
+  right:15px;
+  width:50px;
+  height: 50px;
 }
 
 .event-dash-card .card-title .day {
-  font-size: 2em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #2E3033;
 }
 .event-list .event-dash-card.active .card-title .day,
 .event-list .event-dash-card.active .card-title small {
@@ -1502,12 +1628,30 @@ footer {
   font-size: 0.75em;
   text-align: left;
   float: right;
-  margin-right: 45px;
-  margin-top: 15px;
+  margin-right: 30px;
+  margin-top: 40px;
 }
 .event-dash-card .card-text {
-  padding: 0 5px 0 20px;
+  padding: 30px 20px 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
 }
+
+.event-dash-card .card-footer p {
+  padding: 30px 20px 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  
+  color: rgba(46, 48, 51, 0.8);
+}
+
 .event-dash-card .card-footer {
   border: none;
   background: transparent;
@@ -1536,13 +1680,14 @@ footer {
 .container-calendar h1 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 61px;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 98px;
   text-align: center;
+  letter-spacing: 0.05em;
   margin-bottom: 70px;
 
-  color: #3b3e45;
+  color: #2E3033;
 }
 
 /* Contact form */
@@ -1564,10 +1709,11 @@ footer {
 .contact-form h1 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 61px;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 98px;
   text-align: center;
+  letter-spacing: 0.05em;
   margin-bottom: 70px;
 
   color: #3b3e45;
@@ -1686,14 +1832,6 @@ form {
   .slide-rect {
     height: 30vh;
   }
-
-  .navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-  }
-
   .slide-side-text {
     left: calc(20vw - -4rem);
   }
@@ -1704,14 +1842,6 @@ form {
     height: 60px;
     line-height: 14px;
     max-width: 100px;
-  }
-
-  header .brand-name img {
-    left: 13px;
-  }
-
-  header .navbar ul li a {
-    font-size: 18px;
   }
 
   .slide-content {
@@ -1766,13 +1896,6 @@ form {
 
 /* Tablet - 320 */
 @media only screen and (max-width: 320px) {
-  header {
-    width: 800px;
-  }
-
-  header .navbar ul li a {
-    font-size: 24px;
-  }
 
   .slide-content {
     margin-top: 2rem;
