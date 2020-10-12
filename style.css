@@ -139,8 +139,9 @@ body ::-moz-selection {
 
 @media (max-width:1791px) {
   .slide-content-text p {
-    margin-left:0;
-    margin-right:0;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    width:100%;
   }
 }
 
