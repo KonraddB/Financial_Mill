@@ -131,7 +131,7 @@ body ::-moz-selection {
   position: absolute;
   top: 40%;
   width: 80% !important;
-  left: 50px;
+  left: 150px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@ body ::-moz-selection {
 }
 .slide-content-text {
   font-family: "Montserrat";
-  font-size: 40px !important;
+  font-size: 45px !important;
   letter-spacing: 0.2rem;
   line-height: 0.87;
   will-change: auto;
@@ -210,19 +210,18 @@ body ::-moz-selection {
   color: #000;
   background-color: #fff;
 }
-.slide-rect {
+/* .slide-rect {
   height: 42vh;
-  width: 48vh;
+  width: 100vh;
   border-image-slice: 10%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -200px;
-  border-width: 2vh;
+  top: 30vh;
+  left: 30vw;
+  border-width: 0.8vh;
   border-style: solid;
   box-shadow: 2px 2px 90px 30px rgba(41, 50, 61, 0.22);
   will-change: auto;
-}
+} */
 @media (max-height: 790px) {
   .slide-rect {
     left: 9vw;
@@ -259,7 +258,8 @@ body ::-moz-selection {
   }
 }
 .slide-side-text > span:first-child {
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.1em;
 }
 .slide-side-text:after {
   content: "";
@@ -293,6 +293,8 @@ body ::-moz-selection {
   flex-basis: 0;
   flex-grow: 1;
   min-width: 15rem;
+  letter-spacing: 0.05em;
+  line-height: 12px;
   transition: 0.25s ease-in-out;
   outline: 0;
 }
@@ -1144,7 +1146,7 @@ http://stackoverflow.com/a/34696029/383904
 }
 
 .image-container {
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
   background-image: url("./images/Group68.png");
   background-position: center;
@@ -1157,7 +1159,7 @@ http://stackoverflow.com/a/34696029/383904
   width: 50%;
   height: 66px;
   left: 114px;
-  padding-top: 390px;
+  padding-top: 200px;
 
   font-family: "Montserrat";
   font-style: normal;
@@ -1180,7 +1182,7 @@ http://stackoverflow.com/a/34696029/383904
 
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 153.4%;
   /* or 37px */
@@ -1194,7 +1196,7 @@ http://stackoverflow.com/a/34696029/383904
   width:100%;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 31px;
   text-align: center;
@@ -1309,6 +1311,20 @@ http://stackoverflow.com/a/34696029/383904
   margin-left: 15px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.btn-primary {
+  background: #2E3033;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-left:none;
+  border-right:none;
+}
+
+.btn-primary:hover {
+  background: #FFFFFF !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5) !important;
+  color:black !important;
 }
 
 /* footer */
@@ -1681,7 +1697,8 @@ footer {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 60px;
+  color: #2E3033;
   line-height: 98px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -1710,13 +1727,13 @@ footer {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 50px;
   line-height: 98px;
   text-align: center;
   letter-spacing: 0.05em;
   margin-bottom: 70px;
 
-  color: #3b3e45;
+  color: #2E3033
 }
 
 form {
