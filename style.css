@@ -1156,7 +1156,7 @@ http://stackoverflow.com/a/34696029/383904
 
 .image-container {
   height: 60vh;
-  width: 100vw;
+  width: auto;
   background-image: url("./images/Group68.png");
   background-position: center;
   background-repeat: no-repeat;
