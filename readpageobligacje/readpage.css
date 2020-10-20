@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
 
 
 * {
@@ -119,7 +120,7 @@ header {
 
 .main {
     grid-area:rightpage;
-    grid-template-rows: fit-content(80px) 400px fit-content(200px) fit-content(800px) 120px;
+    grid-template-rows: fit-content(80px) 500px fit-content(200px) fit-content(800px) 120px;
     display:grid;
     grid-template-areas: 
     'head'
@@ -149,47 +150,63 @@ header {
 }
 
 .home {
-    background-image: url(/images/image1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    grid-template-columns: 1fr;
-    grid-area:home;
-}
-
-.containerHome {
-    background-image: url(/images/key-2486606_1920.jpg);
+    background-image: url(/images/obligacje_wpis.png);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity:0.8;
-    z-index:1;
-    position: absolute;
-    height:400px;
+    opacity:1;
+    position: static;
+    grid-template-columns: 1fr;
+    grid-area:home;
+    height:500px;
     min-width:100%;
 }
+
+.containerHome {
+    position:relative;
+} 
+
+.containerHome img {
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    right:20px;
+    bottom:-70px;
+}
+
 
 .home .caption {
     width : 100%;
     text-align: center;
     padding:100px;
+    margin:0 auto;
+    height:500px;
     font-family: rift-soft, sans-serif;
 }
 
 .home .caption .h2Blog {
-    font-size: 30px;
-    text-transform: lowercase;
-    -webkit-text-stroke: 1px #ffffff;
-    color: rgba(0,0,0,0);
-    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
 }
 
 .h1Blog {
-    font-size: 62px;
-    margin-bottom:40px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding:80px 0 50px 0;
 }
 
 /* TEXTCONTENT */
@@ -200,24 +217,31 @@ header {
     justify-content: center;
     align-items:center;
     font-family:rift-soft,sans-serif;
-    padding:80px;
+    
+}
+
+.titleContent h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+    margin:50px 0;
 }
 
 .titleContent p{
-    width: 1037px;
+    width: 1329px;
     height: 89px;
-    left: 174px;
-    top: 710px;
-
-    font-family: 'Montserrat';
+    
+    font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 153.4%;
-    /* or 31px */
-
+    font-weight: 600;
+    font-size: 24px;
     text-align: center;
-
+    letter-spacing: 0.05em;
     color: #000000;
 
 }
@@ -225,13 +249,14 @@ header {
 /* HERO */
 
 .hero {
-    width:80vw;
+    padding:100px 0 150px 0;
+    width:75vw;
     margin:0 auto;
     display:grid;
     grid-area:hero;
     grid-template-columns: repeat(2,1fr);
     grid-gap:30px 100px;
-    padding:40px;
+    text-align: justify;
     font-family:rift-soft,sans-serif;
 }
 .hero1, .hero2, .hero3, .hero4, .hero5, .hero6, .hero7 {
@@ -244,22 +269,33 @@ header {
 
     letter-spacing: 0.03em;
 
-    color: #000000;
+    color: #2E3033;
 }
 
-.hero4 h1 {
-    font-family: 'Montserrat';
+.hero4 {
+    font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 48px;
-    line-height: 58px;
-    margin-bottom:30px;
-    /* or 121% */
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    display:flex;
+    align-items: center;
+    text-align: left;
+    color: #2E3033;
+    }
 
-    letter-spacing: 0.055em;
+    .hero6 h1 {
+        font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: right;
+    letter-spacing: 0.05em;
 
-    color: #2E6171;
-}
+    color: #2E3033;
+    }
 
 footer {
     grid-area:footer;
@@ -340,4 +376,179 @@ a {
     position: fixed;
     top: 100px;
     width: 100px;
+  }
+
+  /* FOOTER */ /* FOOTER *//* FOOTER *//* FOOTER */
+
+.footer {
+    margin-top: 0;
+    width: 100%;
+    height: 251px;
+    background: rgba(46, 48, 51, 0.85);
+  }
+  
+  .footer .footer-container {
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin:0;
+    padding:0;
+  }
+  
+  .footer .logo-financial {
+    width: 220px;
+    height: 171px;
+  }
+  
+  .footer-events {
+    padding:8px 41px 20px 0;
+    border-top: 2px solid #2E3033;
+    border-right: 2px solid #2E3033;
+  }
+  
+  .footer-events h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin:0 0 15px 0;
+  }
+  
+  .footer-events .events-box {
+    width:264px;
+    height: 126px;
+    background: #2E3033;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer-events .events-box h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 19px 0 11px 0;
+    margin:0;
+  }
+  
+  .footer-events .events-box h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin:0 0 19px 0;
+  }
+  
+  .footer-events .events-box p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin:0;
+    padding:0;
+    width:auto;
+  }
+  
+  .social-media {
+    display:flex;
+    flex-direction: row;
+    border-bottom: 2px solid #2E3033;
+    border-left: 2px solid #2E3033;
+    padding: 0 0 24px 28px;
+  }
+  
+  .social-media h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-90deg);
+    margin:0;
+  }
+  
+  .social-media ul {
+    margin-left:-90px;
+  }
+  
+  .social-media ul li img {
+    width:40px;
+    height:40px;
+  }
+  
+  .social-media ul li{
+    padding-top:15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:37px;
+  }
+  
+  .social-media ul li button {
+    background: #2158AB !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    height:27px;
+    width: 160px;
+    border:none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .social-media ul li .btn-orange {
+    background: #F56040 !important;
+  }
+  
+  .social-media ul li .btn-blue {
+    background: #0E76AB !important;
+  }
+  
+  .contact-box {
+    border-top: 2px solid #2E3033;
+    border-right: 2px solid #2E3033;
+    padding: 12px 14px 0 0;
+  }
+  
+  .contact-box h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin:0 0 15px 0;
+  }
+  
+  .contact-box p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    margin:7px 0 0 0;
+    padding:0;
+    width:auto;
   }
