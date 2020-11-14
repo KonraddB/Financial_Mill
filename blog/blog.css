@@ -227,16 +227,17 @@ header .brand-name a{
   margin-top:50px;
   display:grid;
   grid-template-rows:500px;
-  grid-template-columns:75% 25%;
+  grid-template-columns:100%;
   grid-template-areas:
-  "lefthero righthero";
+  "lefthero";
   padding-bottom:300px !important;
 }
 
 .container-left-hero {
   grid-area: lefthero;
-  width:100%;
+  width:90%;
   height:100%;
+  margin:0 auto;
 }
 
 .container-right-hero {
@@ -277,6 +278,8 @@ header .brand-name a{
 .container-left-hero .container-card {
   display:flex;
   justify-content: space-around;
+  flex-wrap:wrap;
+  grid-gap:50px;
   width:100%;
 }
 
@@ -351,7 +354,7 @@ header .brand-name a{
   color: #2E3033;
 }
 
-.container-left-hero .container-card .card .card-bottom .card-bottom-container button{
+.container-left-hero .container-card .card .card-bottom .card-bottom-container a {
   background: #2E3033;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   float:right;
@@ -362,12 +365,16 @@ header .brand-name a{
   font-weight: 500;
   font-size: 12px;
   border:none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.container-left-hero .container-card .card .card-bottom .card-bottom-container button:hover{
+.container-left-hero .container-card .card .card-bottom .card-bottom-container a:hover{
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  color:#2E3033;
+  color:#2E3033 !important;
   border:none;
 }
 
