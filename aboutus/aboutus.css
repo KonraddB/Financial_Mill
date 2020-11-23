@@ -1330,7 +1330,6 @@ footer h2 {
 @media only screen and (max-width: 1492px) {
   
   .contact-sidebar {
-    background: rgba(0, 54, 136, 0.9);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height:15vh;
@@ -1349,6 +1348,11 @@ footer h2 {
     color: #FFFFFF;
     line-height:30px;
     width:100%;
+  }
+
+  
+  .middle-sidebar h4 {
+    font-size:14px;
   }
 
 }
@@ -1371,4 +1375,5 @@ footer h2 {
     right: 0;
     padding-right:30px;
   }
+
 }
