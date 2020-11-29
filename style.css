@@ -197,9 +197,11 @@ body ::-moz-selection {
   align-self: flex-start;
   margin-top: 4.5rem;
   margin-left: 43%;
-  padding: 0.9rem 2.2rem;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  font-size:15px;
+  padding:16px 32px;
+  background: #ffffff;
+  border-radius:10px;
+  color:#000000;
   transition: 0.18s ease-in-out;
   font-weight: 700;
 }
@@ -299,6 +301,8 @@ body ::-moz-selection {
   background-color: rgba(208, 206, 204, 0.32);
   border: 0;
   padding: 1.6rem 2.2rem;
+  font-size:15px;
+  font-weight: 500;
   flex-basis: 0;
   flex-grow: 1;
   min-width: 15rem;
@@ -715,7 +719,7 @@ header .navbar ul li{
 	margin-left:35px;
 }
 header .navbar ul li a{
-	font-size: 16px;
+	font-size: 22px;
 	text-decoration: none;
 	line-height: 72px;
   color:#ffffff;
@@ -1147,7 +1151,7 @@ http://stackoverflow.com/a/34696029/383904
 .latestposts-header {
   height:85px;
   width:30%;
-  margin:50px auto;
+  margin:80px auto 50px auto;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -1187,7 +1191,8 @@ http://stackoverflow.com/a/34696029/383904
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
-  line-height: 85px;
+  line-height: 70px;
+  letter-spacing: 0.1em;
   text-align: center;
 
   color: #ffffff;
@@ -1429,7 +1434,7 @@ p {
 .flip-card-inner {
   position: relative;
   flex-basis:30%;
-  width: 450px;
+  width: 100%;
   height: 280px;
   text-align: center;
   transition: transform 0.6s;
@@ -1453,6 +1458,7 @@ p {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius:10px;
 }
 
 .flip-card-front {
@@ -1530,12 +1536,14 @@ p {
 }
 .event-list div {
   float: left;
-  width: 360px;
+  width: 23vw;
   height: 300px;
   margin: 0 10px;
 }
 #forcecentered {
   position: relative;
+  display:flex;
+  justify-content: center;
 }
 
 #forcecentered .event-list .event-dash-card.active {
@@ -1684,7 +1692,7 @@ p {
 
 .container-questions .top-question{
   height:80px; 
-  width:40%;
+  width:30%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -1694,8 +1702,12 @@ p {
   justify-content: center;
 }
 
+.container-questions .top-question p {
+  width:90%;
+}
+
 .container-questions .middle-question {
-  width:78%;
+  width:65%;
   margin:0 auto;
   display:flex;
   flex-direction: row;
@@ -1704,8 +1716,8 @@ p {
 }
 
 .container-questions .left-question{
-  height:60px; 
-  width:42%;
+  height:80px; 
+  width:30%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -1715,8 +1727,8 @@ p {
 }
 
 .container-questions .right-question{
-  height:60px; 
-  width:42%;
+  height:80px; 
+  width:30%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -1741,8 +1753,8 @@ p {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  margin: 50px auto;
-  width:70%;
+  margin: 50px auto 100px auto;
+  width:65%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -1755,6 +1767,7 @@ p {
   font-size: 18px;
   text-align: center;
   font-weight: 500;
+  width:90%;
 
   color: #ffffff;
 }
@@ -1764,7 +1777,7 @@ p {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  width:33%;
+  width:40vw;
   margin:0 auto 50px auto;
   display:flex;
   align-items: center;
@@ -1789,7 +1802,9 @@ p {
   width: 100%;
   color: black;
   margin: 0 auto;
-  background: url('./images/Group\ 115.png')
+  background: url('./images/Group\ 115.png') no-repeat;
+  background-position: top;
+  background-size:cover;
 }
 
 .contact-form hr {
