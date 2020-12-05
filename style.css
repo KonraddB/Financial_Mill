@@ -199,9 +199,10 @@ body ::-moz-selection {
   margin-left: 43%;
   font-size:15px;
   padding:16px 32px;
-  background: #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   border-radius:10px;
-  color:#000000;
+  color:#FFFFFF;
   transition: 0.18s ease-in-out;
   font-weight: 700;
 }
@@ -300,14 +301,15 @@ body ::-moz-selection {
   cursor: pointer;
   background-color: rgba(208, 206, 204, 0.32);
   border: 0;
-  padding: 1.6rem 2.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size:15px;
   font-weight: 500;
   flex-basis: 0;
   flex-grow: 1;
   min-width: 15rem;
   letter-spacing: 0.05em;
-  line-height: 12px;
+  line-height: 20px;
   transition: 0.25s ease-in-out;
   outline: 0;
   border-radius:10px;
@@ -326,8 +328,8 @@ body ::-moz-selection {
   cursor: default;
   font-weight: 700;
   background-color: #3b3e45;
-  padding-top: 1.9rem;
-  padding-bottom: 1.9rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   margin-bottom: -0.3rem;
   position: relative;
 }
@@ -1164,11 +1166,11 @@ http://stackoverflow.com/a/34696029/383904
 .latestposts-h1 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #2E3033;
+    color: #000000;
     margin:0;
 }
 
@@ -1190,7 +1192,7 @@ http://stackoverflow.com/a/34696029/383904
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 70px;
   letter-spacing: 0.1em;
   text-align: center;
@@ -1402,7 +1404,7 @@ http://stackoverflow.com/a/34696029/383904
 
 .containerCard .bodyCard h1,
 p {
-  width: 80%;
+  width: 93%;
   text-align: center;
   margin: auto;
 }
@@ -1414,7 +1416,7 @@ p {
 }
 
 .container-card {
-  width: 80%;
+  width: 95%;
   height: 90%;
   display: flex;
   margin: 0 auto;
@@ -1439,55 +1441,24 @@ p {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius:10px;
 }
 
-.flip-card:focus {
-  outline: 0;
-}
-
-.flip-card:hover .flip-card-inner,
-.flip-card:focus .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
   border-radius:10px;
 }
 
-.flip-card-front {
-  width:100%;
-  height: 100%;
-  box-sizing: border-box;
-  color: black !important;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flip-card-front img {
-    width: 239px;
-    height: 192px;
-
-}
 
 .flip-card-back {
-  background:rgba(0, 0, 0, 0.8);
-  color: black;
-  transform: rotateY(180deg);
   z-index: 1;
   margin-left:3px;
 }
 
 .flip-card-back h3 {
-  margin-top: 10px;
+  margin-top: 28px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
@@ -1507,17 +1478,7 @@ p {
     text-align: center;
     color: #FFFFFF;
     margin-bottom:20px;
-}
-
-.flip-card-front h3 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
-  text-align: center;
-
-  color: #000000;
+    margin-top:30px;
 }
 
 .nextbtn {
@@ -1666,8 +1627,7 @@ p {
 }
 
 .container-calendar {
-  background: linear-gradient(180.06deg, #000A2E 9.81%, rgba(0, 14, 64, 0.66) 43.63%, rgba(0, 10, 41, 0.38) 70.28%, rgba(255, 255, 255, 0) 104.94%);
-}
+  background: linear-gradient(180.06deg, rgba(0, 10, 46, 0.85) 8.25%, rgba(0, 14, 64, 0.595) 43.63%, rgba(0, 10, 41, 0.544) 56.87%, rgba(0, 10, 46, 0.85) 94.01%);}
 
 .container-calendar hr {
   border: 1px solid #3b3e45;
@@ -1692,7 +1652,7 @@ p {
 
 .container-questions .top-question{
   height:80px; 
-  width:30%;
+  width:40%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -1707,7 +1667,7 @@ p {
 }
 
 .container-questions .middle-question {
-  width:65%;
+  width:80%;
   margin:0 auto;
   display:flex;
   flex-direction: row;
@@ -1716,8 +1676,8 @@ p {
 }
 
 .container-questions .left-question{
-  height:80px; 
-  width:30%;
+  height:60px; 
+  width:40%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -1727,8 +1687,8 @@ p {
 }
 
 .container-questions .right-question{
-  height:80px; 
-  width:30%;
+  height:60px; 
+  width:40%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -1754,7 +1714,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   margin: 50px auto 100px auto;
-  width:65%;
+  width:75%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -1787,7 +1747,7 @@ p {
 .container-calendar .closest-event h1 {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 40px;
   line-height: 61px;
   text-align: center;
@@ -1818,7 +1778,7 @@ p {
 .contact-form h1 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 40px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -1830,7 +1790,7 @@ form {
   display: flex;
   flex-direction: column;
   width:65%;
-  height:70%;
+  height:60%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -1848,13 +1808,14 @@ form {
 #email,
 #topic,
 #content {
-  height: 55px;
+  height: auto;
+  padding:10px 0;
   margin-bottom:19px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  line-height: 49px;
+  line-height: 30px;
   color: rgba(0, 0, 0, 0.4);
   border: 1px solid #3b3e45;
   box-sizing: border-box;
@@ -1870,8 +1831,9 @@ form {
 }
 
 #content {
-  height: 300px;
+  height: 250px;
   margin:0;
+  padding-right:20px;
 }
 
 /*********************
@@ -2030,7 +1992,7 @@ form {
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 footer {
-  padding:40px 0;
+  padding:30px 0;
   background: #010030;
   display: flex;
   justify-content: center;
@@ -2039,33 +2001,34 @@ footer {
 
 footer .footer-container {
   width:50%;
-  height:80%;
+  height:auto;
   margin:0 auto;
 }
 
 footer h1 {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 35px;
   line-height: 51px;
   text-align: center;
   letter-spacing: 0.05em;
   margin:0;
-  color: #FFFFFF
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 footer h2 {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 22px;
   line-height: 39px;
   text-align: center;
   letter-spacing: 0.05em;
 
   color: #FFFFFF;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .icon-container {
@@ -2076,19 +2039,19 @@ footer h2 {
 
 .icon-container img {
   margin-right:60px;
-  width: 60px;
+  width: 40px;
 }
 
 .icon-container img:nth-last-child(1) {
   margin-right: 0;
 }
 
-.footer-container hr {
+footer hr {
   margin:30px 0 20px 0;
   color: #C4C4C4;
 }
 
-.footer-container p {
+footer p {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;

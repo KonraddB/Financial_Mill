@@ -76,18 +76,18 @@ body {
 
 .way-header {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  line-height: 98px;
+  line-height: 85px;
   text-align: center;
   letter-spacing: 0.05em;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   color: #2E3033;
-  width:57vw;
+  width:45vw;
   margin:0 auto 30px auto;
 }
 
@@ -164,8 +164,8 @@ body {
   font-style: normal;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 50px;
-  line-height: 98px;
+  font-size: 40px;
+  line-height: 85px;
   text-align: center;
   letter-spacing: 0.05em;
 
@@ -187,7 +187,7 @@ body {
 .card-1-header-container,
 .card-2-header-container {
   bottom: 137px;
-  left: -237px;
+  left: -150px;
   position: absolute;
   width: fit-content;
   transform: rotate(90deg);
@@ -195,7 +195,7 @@ body {
 
 .card-2-header-container {
   left: unset;
-  right: -237px;
+  right: -150px;
   bottom: 151px;
 }
 
@@ -216,8 +216,8 @@ body {
 
 .card-1-header-container h3,
 .card-2-header-container h3 {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 400;
   color:#FFFFFF;
 }
 
@@ -256,13 +256,13 @@ body {
   height: 100%;
   z-index: -1;
   top: 25%;
-  height: 75%;
+  height: 72%;
 }
 
 .card-1-middle,
 .card-2-middle {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 50px 40px 0 40px;
 }
 
@@ -295,8 +295,9 @@ body {
 .grid {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: 33.5% 1fr;
-  width: 100%;
+  grid-template-columns: 25% 1fr;
+  width: 90%;
+  margin-bottom: 20px;
 }
 
 .info {
@@ -308,7 +309,7 @@ body {
 }
 
 .info-inner {
-  height: 65px;
+  height: 50px;
   background-color: white;
   box-sizing: inherit;
   display: flex;
@@ -326,7 +327,9 @@ body {
 
 .card-p-bottom {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Monserrat, sans-serif;
+  font-weight: 400;
   text-align: center;
   padding: 0 40px 40px 40px;
 }
@@ -1105,7 +1108,7 @@ header .brand-name a{
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:21vh;
+  height:19vh;
   width:100%;
   margin:0 0 4px 0;
   display:flex;
@@ -1115,7 +1118,7 @@ header .brand-name a{
 
 .top-sidebar img{
   max-width: 100%;
-  height: auto;
+  height: 80%;
   display:block; 
 }
 
@@ -1141,51 +1144,69 @@ header .brand-name a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.middle-sidebar-container img {
+  position: absolute;
+  left:40px;
+  top:10px;
+}
+
+.middle-sidebar-container h3 {
+  font-size:13px;
 }
 
 .middle-sidebar-container h4 {
-  margin: 7px 0;
+  margin: 7px 2px;
   text-align: center;
+  font-size:13px;
 }
 
 .middle-sidebar-container hr {
-  width: 30%;
+  width: 40%;
   margin:5px 0;
 }
 
 .middle-sidebar-container p {
   text-align: center;
   color: rgba(46, 48, 51, 0.8);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .contact-sidebar {
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:15vh;
+  height:11vh;
   width:100%;
   margin:0 0 4px 0;
   display:flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.contact-sidebar img {
+  margin-right:8px;
+}
 
 .contact-sidebar p {
   font-weight: 500;
-  font-size: 15px;
-  text-align: center;
+  font-size: 13px;
+  text-align: left;
   color: #FFFFFF;
   line-height:30px;
   width:80%;
+  display:flex;
+  align-items: center;
 }
 
 .bottom-sidebar {
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:30vh;
+  height:34vh;
   width:100%;
   display:flex;
   flex-direction: column;
@@ -1231,77 +1252,6 @@ header .brand-name a{
   color: #ffffff;
   border:none;
   margin-top:10px;
-}
-
-/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
-
-footer {
-  padding:40px 0;
-  background: #010030;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-container {
-  width:50%;
-  height:80%;
-}
-
-footer h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 51px;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #FFFFFF
-}
-
-footer h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #FFFFFF;
-  margin: 30px 0;
-}
-
-.icon-container {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-container img {
-  margin-right:60px;
-}
-
-.icon-container img:nth-last-child(1) {
-  margin-right: 0;
-}
-
-.footer-container hr {
-  margin:30px 0 20px 0;
-  color: #C4C4C4;
-}
-
-.footer-container p {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #FFFFFF;
 }
 
 /* MEDIA WITH SIDEBAR */
@@ -1385,3 +1335,77 @@ footer h2 {
   }
 
 }
+
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+
+footer {
+  padding:30px 0;
+  background: #010030;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-container {
+  width:50%;
+  height:auto;
+  margin:0 auto;
+}
+
+footer h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin:0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+footer h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+
+.icon-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  margin-right:60px;
+  width: 40px;
+}
+
+.icon-container img:nth-last-child(1) {
+  margin-right: 0;
+}
+
+footer hr {
+  margin:30px 0 20px 0;
+  color: #C4C4C4;
+}
+
+footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+

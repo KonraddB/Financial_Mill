@@ -193,7 +193,7 @@ header .brand-name a{
 
 
 .home {
-    background-image: url(/images/readpageOSP.png);
+    background-image: url('../images/obligacje_wpis.png');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,7 +231,7 @@ header .brand-name a{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 20px;
     line-height: 59px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -242,14 +242,14 @@ header .brand-name a{
 .h1Blog {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 60px;
     line-height: 88px;
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding:80px 0 50px 0;
+    padding:110px 0 50px 0;
 }
 
 /* TEXTCONTENT */
@@ -264,7 +264,7 @@ header .brand-name a{
 
 .titleContent .title-content-paragraph {
   width:85%;
-  background: rgba(0, 26, 160, 0.5);
+  background: rgba(17, 0, 118, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin:0 auto;
@@ -274,7 +274,7 @@ header .brand-name a{
 .titleContent h4 {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 30px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -289,7 +289,7 @@ header .brand-name a{
     margin:0 auto;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -326,6 +326,14 @@ header .brand-name a{
     color: #2E3033;
 }
 
+.hero3 {
+  margin-top: -200px;
+}
+
+.hero5 {
+  margin-top: -100px;
+}
+
 .hero4 {
     font-family: Montserrat;
     font-style: normal;
@@ -334,8 +342,10 @@ header .brand-name a{
     line-height: 59px;
     letter-spacing: 0.05em;
     display:flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     color: #2E3033;
+    text-align:left;
     }
 
     .hero6 h1 {
@@ -430,7 +440,7 @@ header .brand-name a{
     width: 18%;
     position: absolute;
     z-index: 1;
-    top: 96px;
+    top: 50px;
     right: 0;
     padding-right:30px;
   }
@@ -441,14 +451,13 @@ header .brand-name a{
     top:100px;
     width: 100%;
     height:100vh;
-    background-color: initial;
   }
   
   .top-sidebar {
     background: #010030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    height:21vh;
+    height:19vh;
     width:100%;
     margin:0 0 4px 0;
     display:flex;
@@ -458,11 +467,8 @@ header .brand-name a{
   
   .top-sidebar img{
     max-width: 100%;
-    height: auto;
+    height: 80% !important;
     display:block; 
-    background-size:none;
-    background-position: none;
-    width:auto;
   }
   
   .middle-sidebar {
@@ -487,52 +493,69 @@ header .brand-name a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:#000000;
+    position: relative;
+  }
+  
+  .middle-sidebar-container img {
+    position: absolute;
+    left:40px;
+    top:10px;
+  }
+  
+  .middle-sidebar-container h3 {
+    font-size:13px;
   }
   
   .middle-sidebar-container h4 {
-    margin: 7px 0;
+    margin: 7px 2px;
     text-align: center;
+    font-size:13px;
   }
   
   .middle-sidebar-container hr {
-    width: 30%;
+    width: 40%;
     margin:5px 0;
   }
   
   .middle-sidebar-container p {
     text-align: center;
     color: rgba(46, 48, 51, 0.8);
-    font-size: 13px;
+    font-size: 12px;
   }
   
   .contact-sidebar {
     background: #010030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    height:15vh;
+    height:11vh;
     width:100%;
     margin:0 0 4px 0;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
+  .contact-sidebar img {
+    margin-right:8px;
+  }
   
   .contact-sidebar p {
     font-weight: 500;
-    font-size: 15px;
-    text-align: center;
+    font-size: 13px;
+    text-align: left;
     color: #FFFFFF;
     line-height:30px;
     width:80%;
+    display:flex;
+    align-items: center;
   }
   
   .bottom-sidebar {
     background: #010030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    height:30vh;
+    height:34vh;
     width:100%;
     display:flex;
     flex-direction: column;
@@ -579,80 +602,7 @@ header .brand-name a{
     border:none;
     margin-top:10px;
   }
-  
-  
-/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
-footer {
-  padding:40px 0;
-  background: #010030;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-container {
-  width:50%;
-  height:80%;
-  margin:0 auto;
-}
-
-footer h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 51px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  margin:0;
-  color: #FFFFFF
-}
-
-footer h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #FFFFFF;
-  margin: 30px 0;
-}
-
-.icon-container {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-container img {
-  margin-right:60px;
-  width: 60px;
-}
-
-.icon-container img:nth-last-child(1) {
-  margin-right: 0;
-}
-
-.footer-container hr {
-  margin:30px 0 20px 0;
-  color: #C4C4C4;
-}
-
-.footer-container p {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #FFFFFF;
-}
 
 /* MEDIA WITH SIDEBAR */
 
@@ -734,4 +684,80 @@ footer h2 {
     padding-right:30px;
   }
 
+}
+.sidebar img{
+  width:auto;
+  height:auto;
+} 
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+
+footer {
+  padding:30px 0;
+  background: #010030;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-container {
+  width:50%;
+  height:auto;
+  margin:0 auto;
+}
+
+footer h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin:0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+footer h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+
+.icon-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  margin-right:60px;
+  width: 40px;
+}
+
+.icon-container img:nth-last-child(1) {
+  margin-right: 0;
+}
+
+footer hr {
+  margin:30px 0 20px 0;
+  color: #C4C4C4;
+}
+
+footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
 }
