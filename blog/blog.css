@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
+body {
+  zoom:0.8;
+}
 
 * {
     box-sizing: border-box;
@@ -226,7 +229,7 @@ header .brand-name a{
 
 .left-page .choose-topic {
   height:68px;
-  width:90%;
+  width:80%;
   margin:35px auto 35px auto;
   background: rgba(1, 0, 48, 0.8);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -252,7 +255,7 @@ header .brand-name a{
   justify-content: flex-start;
   width:100%;
   grid-gap:35px;
-  width:90%;
+  width:80%;
   margin:0 auto;
 }
 
@@ -284,7 +287,7 @@ header .brand-name a{
   justify-content: flex-start;
   flex-wrap:wrap;
   grid-gap:35px;
-  width:90%;
+  width:80%;
   margin:0 auto;
 }
 
@@ -310,7 +313,7 @@ header .brand-name a{
 }
 
 .left-page .container-card .card .card-bottom {
-  height:48%;
+  height:55%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -332,7 +335,7 @@ header .brand-name a{
 .left-page .container-card .card .card-bottom .card-bottom-container .first-p{
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   padding-top:16px;  
   color: #2E3033;
   float:left;
@@ -341,7 +344,7 @@ header .brand-name a{
 .left-page .container-card .card .card-bottom .card-bottom-container .second-p{
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 13px;
   padding-top:8px;  
   color: #2E3033;
   float:right;
@@ -361,7 +364,7 @@ header .brand-name a{
   color:#FFFFFF;
   width:40%;
   height: 27px;
-  margin: 10px auto 0 auto;
+  margin: 30px auto 0 auto;
   font-weight: 500;
   font-size: 12px;
   border-radius:10px;
@@ -411,14 +414,14 @@ header .brand-name a{
   position: sticky;
   top:85px;
   width: 100%;
-  height:100vh;
+  height:115vh;
 }
 
 .top-sidebar {
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:19vh;
+  height:23vh;
   width:100%;
   margin:0 0 4px 0;
   display:flex;
@@ -436,7 +439,7 @@ header .brand-name a{
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:21vh;
+  height:27vh;
   width:100%;
   margin:0 0 4px 0;
   display:flex;
@@ -460,15 +463,17 @@ header .brand-name a{
 .middle-sidebar-container img {
   position: absolute;
   left:40px;
-  top:16px;
+  top:28px;
 }
 
 .middle-sidebar-container h3 {
-  font-size:13px;
+  font-size:21px;
+  font-family: Montserrat, sans-serif;
+  font-weight:700;
 }
 
 .middle-sidebar-container h4 {
-  margin: 7px 2px;
+  margin: 13px 2px;
   text-align: center;
   font-size:13px;
 }
@@ -488,7 +493,7 @@ header .brand-name a{
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:11vh;
+  height:13vh;
   width:100%;
   margin:0 0 4px 0;
   display:flex;
@@ -516,7 +521,7 @@ header .brand-name a{
   background: #010030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height:34vh;
+  height:40vh;
   width:100%;
   display:flex;
   flex-direction: column;
@@ -524,6 +529,10 @@ header .brand-name a{
   align-items: center;
 }
 
+.bottom-sidebar h3 {
+  color:#ffffff;
+  padding-top:20px;
+}
 
 .bottom-sidebar form {
   display:flex;
