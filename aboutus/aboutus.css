@@ -86,62 +86,32 @@ body {
   border-radius: 10px;
   color: #2E3033;
   width:45vw;
-  margin:0 auto 30px auto;
+  margin:0 auto 50px auto;
 }
 
 .way-card {
-  display: grid;
-  position: relative;
-  grid-template-columns: 60% 1fr;
-  padding: 0px 50px;
-  grid-gap: 50px;
-  border-radius:10px;
-  background: rgba(0, 0, 0, 0.7); 
-  }
-
-.way-card-p-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width:75%;
+  margin:0 auto;
+  padding:40px;
 }
 
 .way-card p {
-  height: 100%;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  color:#ffffff;
+  font-size:16px;
   line-height: 140%;
-  
+  font-weight: 500;
   text-align: justify;
-  
-  color: #FFFFFF;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left:40px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .way-card img {
-  height:50%;
-  float:right;
-}
 
-.way-header-image {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.way-card-background {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  height: 100%;
 }
 
 .meet-header-contener {
@@ -149,7 +119,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:25vw;
+  width:22vw;
   margin-left: auto;
   margin-right: auto;
   background: #FFFFFF;
@@ -165,7 +135,6 @@ body {
   line-height: 85px;
   text-align: center;
   letter-spacing: 0.05em;
-
   color: #2E3033;
 }
 
@@ -184,7 +153,7 @@ body {
 .card-1-header-container,
 .card-2-header-container {
   bottom: 137px;
-  left: -150px;
+  left: -70px;
   position: absolute;
   width: fit-content;
   transform: rotate(90deg);
@@ -192,7 +161,7 @@ body {
 
 .card-2-header-container {
   left: unset;
-  right: -150px;
+  right: -70px;
   bottom: 151px;
 }
 
@@ -242,6 +211,9 @@ body {
 .meet-cards {
   position: relative;
   z-index:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-background {
@@ -249,7 +221,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   position: absolute;
-  width: 100%;
+  width: 85%;
   height: 100%;
   z-index: -1;
   top: 25%;
@@ -260,18 +232,18 @@ body {
 .card-2-middle {
   display: flex;
   margin-bottom: 20px;
-  padding: 50px 40px 0 40px;
+  padding: 50px 0 0 40px;
+  width:85%;
 }
 
 .card-1-img {
-  margin-right: 30px;
   border-radius:10px;
   height:80%;
 }
 
 .card-2-img {
-  margin-left: 30px;
   border-radius:10px;
+  margin-right:40px;
 }
 
 .card-inner {
@@ -280,7 +252,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 9px;
-  width: 100%;
+  width: 73%;
 }
 
 .card-inner h4 {
@@ -292,7 +264,7 @@ body {
 .grid {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 30% 1fr;
   width: 90%;
   margin-bottom: 20px;
 }
@@ -319,20 +291,31 @@ body {
 }
 
 .info-inner p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.inner-text {
+  background:none !important;
+  color:#ffffff;
+  box-shadow: none;
+  align-items: flex-end;
+  font-size:20px;
+  font-weight: 800;
+}
+
+.info-inner p {
   text-align: center;
 }
 
 .card-p-bottom {
   color: white;
   font-size: 16px;
-  font-family: Monserrat, sans-serif;
+  font-family: 'Monserrat', sans-serif;
   font-weight: 400;
   text-align: center;
-  padding: 0 40px 40px 40px;
-}
-
-.card-2 .card-p-bottom {
-  padding-bottom: 40px;
+  padding: 0 40px 50px 40px;
+  text-align:justify;
+  width: 85%;
 }
 
 /*********************
@@ -1081,9 +1064,6 @@ header .brand-name a{
   display:grid;
   grid-template-columns: 82% 18%;
   grid-template-rows: auto;
-  background-image: url('../images/blog_background.png');
-  background-repeat: no-repeat;
-  background-size:cover;
   position:relative;
   height:1966px;
   margin-top:-7px;
@@ -1271,11 +1251,6 @@ header .brand-name a{
 
   .way {
     padding: 50px 100px;
-  }
-
-  .card-1, .card-2 {
-    margin-left:100px;
-    margin-right: 100px;
   }
 
   .main-grid {

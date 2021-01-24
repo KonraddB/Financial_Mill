@@ -5,14 +5,14 @@ var app = new Vue({
       isPreviousSlide: false,
       isFirstLoad: true,
       slides: [
-          {
-              headlineFirstLine: "Otwarte Konto Oszczędnościowe",
-              headlineSecondLine: "Jedno oko na maroko drugie w banku",
-              sublineFirstLine: "#bankowość #wpis",
-              bgImg: "images/eye-3440464_1920.jpg",
-              rectImg: "images/eye-3440464_1920.jpg",
-              hrefLink: "readpageoko/readpage.html"
-          },
+          // {
+          //     headlineFirstLine: "Otwarte Konto Oszczędnościowe",
+          //     headlineSecondLine: "Jedno oko na maroko drugie w banku",
+          //     sublineFirstLine: "#bankowość #wpis",
+          //     bgImg: "images/eye-3440464_1920.jpg",
+          //     rectImg: "images/eye-3440464_1920.jpg",
+          //     hrefLink: "readpageoko/readpage.html"
+          // },
           {
               headlineFirstLine: "Rachunek Oszczędnościwo-Rozliczeniowy",
               headlineSecondLine: "Pierwszym krokiem do bogactwa...",
