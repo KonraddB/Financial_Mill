@@ -318,401 +318,6 @@ body {
   width: 85%;
 }
 
-/*********************
-  Media Query
-**********************/
-/* Laptop - 1024 */
-@media only screen and (max-width: 1024px) {
-  .way {
-    padding: 150px 50px 100px 50px;
-  }
-
-  .meet-header-contener {
-    height: 160px;
-  }
-
-  .about h2 {
-    margin-bottom: 60px;
-  }
-
-  .about h2,
-  .way-header,
-  .meet h2 {
-    font-size: 60px;
-  }
-
-  .about p {
-    font-size: 18px;
-  }
-
-  .card-1-header-container h3,
-  .card-2-header-container h3 {
-    font-size: 45px;
-  }
-
-  .card-p-bottom {
-    font-size: 14px;
-  }
-
-  .card-1-img,
-  .card-2-img {
-    max-width: 350px;
-  }
-
-  .info-inner {
-    height: 55px;
-  }
-
-  .card-1 {
-    margin-left: 120px;
-  }
-
-  .card-2 {
-    margin-right: 120px;
-  }
-
-  .card-1-header-container {
-    left: -200px;
-  }
-
-  .card-2-header-container {
-    right: -200px;
-  }
-}
-
-/* Tablet - 768 */
-@media only screen and (max-width: 768px) {
-  .way {
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-
-  .way-card {
-    padding: 40px;
-    grid-gap: 40px;
-  }
-
-  .meet-header-contener {
-    height: 100px;
-  }
-
-  .about {
-    max-height: 400px;
-  }
-
-  .about h2 {
-    margin-bottom: 30px;
-  }
-
-  .mask {
-    padding-top: 165px;
-  }
-
-  .about h2,
-  .way-header,
-  .meet h2 {
-    font-size: 40px;
-  }
-
-  .way-header {
-    margin-bottom: 20px;
-  }
-
-  .way-card p {
-    line-height: normal;
-    letter-spacing: normal;
-    font-size: 14px;
-  }
-
-  .grid,
-  .info {
-    grid-gap: 10px;
-  }
-
-  .grid {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: auto;
-    width: 100%;
-  }
-
-  .card-1-header-container h3,
-  .card-2-header-container h3 {
-    font-size: 40px;
-  }
-
-  .card-1 {
-    margin-bottom: 50px;
-  }
-
-  .card-1-middle .card-2-middle {
-    padding: 30px 20px 0 20px;
-  }
-
-  .card-p-bottom {
-    font-size: 12px;
-  }
-
-  .card-1-img,
-  .card-2-img {
-    max-width: 220px;
-  }
-
-  .card-1-img {
-    margin-right: 20px;
-  }
-
-  .card-2-img {
-    margin-left: 20px;
-  }
-
-  .info-inner {
-    height: 40px;
-  }
-
-  .info-inner p {
-    font-size: 13px;
-  }
-
-  .card-inner h4 {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-
-  .card-1 {
-    margin-left: 80px;
-    padding-bottom: 20px;
-  }
-
-  .card-2 {
-    margin-right: 80px;
-  }
-
-  .card-1-middle,
-  .card-2-middle {
-    margin-bottom: 10px;
-  }
-
-  .card-2 .card-p-bottom {
-    padding-bottom: 20px;
-  }
-
-  .card-1-header-container {
-    left: -155px;
-  }
-
-  .card-2-header-container {
-    right: -155px;
-  }
-
-  .card-1-header-container,
-  .card-2-header-container {
-    bottom: 107px;
-  }
-
-  .card-1-header-container h3,
-  .card-2-header-container h3 {
-    font-size: 35px;
-  }
-
-  /* Mobile L - 425 */
-  @media only screen and (max-width: 425px) {
-    .card-1-header-container,
-    .card-2-header-container {
-      position: static;
-      transform: unset;
-    }
-
-    .card-1,
-    .card-2 {
-      margin: 0;
-    }
-
-    .card-1 {
-      margin-bottom: 20px;
-    }
-
-    .about h2,
-    .way-header,
-    .meet h2,
-    .card-1-header-container h3,
-    .card-2-header-container h3,
-    .card-inner h4 {
-      font-size: 25px;
-    }
-
-    .card-2-header-container hr {
-      position: static;
-    }
-
-    .mask {
-      padding-top: 105px;
-    }
-
-    .mask p {
-      font-size: 12px;
-    }
-
-    .about {
-      max-height: 250px;
-    }
-
-    .way {
-      padding: 20px 20px 30px 20px;
-    }
-
-    .way-card {
-      display: block;
-      padding: 30px;
-    }
-
-    .way-card p {
-      font-size: 13px;
-    }
-
-    .way-card-p-container {
-      margin-bottom: 30px;
-    }
-
-    .meet-header-contener {
-      height: 70px;
-    }
-
-    .card-1-header-container,
-    .card-2-header-container {
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-
-    .card-1-middle,
-    .card-2-middle {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-    }
-
-    .card-2-middle {
-      flex-direction: column-reverse;
-    }
-
-    .card-1-img,
-    .card-2-img {
-      margin: 0;
-      max-width: 200px;
-    }
-
-    .card-inner {
-      padding-top: 10px;
-    }
-
-    .card-inner h4 {
-      margin-bottom: 20px;
-    }
-
-    .card-p-bottom {
-      text-align: justify;
-      padding: 0 20px;
-    }
-  }
-
-  /* Mobile S - 320 */
-  @media only screen and (max-width: 320px) {
-    .about h2,
-    .way-header,
-    .meet h2,
-    .card-1-header-container h3,
-    .card-2-header-container h3,
-    .card-inner h4 {
-      font-size: 20px;
-    }
-
-    .mask p {
-      font-size: 10px;
-    }
-
-    .mask h2 {
-      margin-bottom: 15px;
-    }
-
-    .about {
-      max-height: 200px;
-    }
-
-    .mask {
-      padding-top: 85px;
-    }
-
-    .way {
-      padding: 10px 20px 10px 20px;
-    }
-
-    .way-header {
-      margin-bottom: 10px;
-    }
-
-    .card-1 {
-      margin-bottom: 10px;
-    }
-
-    .way-card {
-      padding: 20px;
-    }
-
-    .way-card img {
-      height: 170px;
-    }
-
-    .way-card-p-container {
-      margin-bottom: 20px;
-    }
-
-    .way-card p {
-      font-size: 11px;
-    }
-
-    .meet-header-contener {
-      height: 55px;
-    }
-
-    .card-1-header-container,
-    .card-2-header-container {
-      margin-top: 20px;
-    }
-
-    .card-1-middle,
-    .card-2-middle {
-      padding: 10px 20px 0 20px;
-    }
-
-    .card-inner h4 {
-      margin-bottom: 10px;
-    }
-
-    .card-2-middle {
-      flex-direction: column-reverse;
-    }
-
-    .card-1-img,
-    .card-2-img {
-      margin: 0;
-      max-width: 175px;
-    }
-
-    .card-p-bottom {
-      font-size: 12px;
-    }
-
-    .info-inner {
-      height: 37px;
-    }
-
-    .info-inner p {
-      font-size: 12px;
-    }
-  }
-}
-
 /*Header*/
 
 header{
@@ -882,180 +487,6 @@ header .brand-name a{
 
 }
 
-/* FOOTER */ /* FOOTER *//* FOOTER *//* FOOTER */
-/* 
-.footer {
-  margin-top: 500px;
-  width: 100%;
-  height: 251px;
-  background: rgba(46, 48, 51, 0.85);
-}
-
-.footer .footer-container {
-  height:100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin:0;
-  padding:0;
-}
-
-.footer .logo-financial {
-  width: 220px;
-  height: 171px;
-}
-
-.footer-events {
-  padding:8px 41px 20px 0;
-  border-top: 2px solid #2E3033;
-  border-right: 2px solid #2E3033;
-}
-
-.footer-events h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  margin:0 0 15px 0;
-}
-
-.footer-events .events-box {
-  width:264px;
-  height: 126px;
-  background: #2E3033;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
-.footer-events .events-box h3 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 19px 0 11px 0;
-  margin:0;
-}
-
-.footer-events .events-box h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin:0 0 19px 0;
-}
-
-.footer-events .events-box p {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin:0;
-  padding:0;
-  width:auto;
-}
-
-.social-media {
-  display:flex;
-  flex-direction: row;
-  border-bottom: 2px solid #2E3033;
-  border-left: 2px solid #2E3033;
-  padding: 0 0 24px 28px;
-}
-
-.social-media h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 26px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: rotate(-90deg);
-  margin:0;
-}
-
-.social-media ul {
-  margin-left:-90px;
-}
-
-.social-media ul li img {
-  width:40px;
-  height:40px;
-}
-
-.social-media ul li{
-  padding-top:15px;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  gap:37px;
-}
-
-.social-media ul li button {
-  background: #2158AB !important;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  height:27px;
-  width: 160px;
-  border:none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.social-media ul li .btn-orange {
-  background: #F56040 !important;
-}
-
-.social-media ul li .btn-blue {
-  background: #0E76AB !important;
-}
-
-.contact-box {
-  border-top: 2px solid #2E3033;
-  border-right: 2px solid #2E3033;
-  padding: 12px 14px 0 0;
-}
-
-.contact-box h1 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  margin:0 0 15px 0;
-}
-
-.contact-box p {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  text-align: center;
-  color: #FFFFFF;
-  margin:7px 0 0 0;
-  padding:0;
-  width:auto;
-} */
 
 /* SIDEBAR */
 
@@ -1275,6 +706,20 @@ header .brand-name a{
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  .card-1, .card-2 {
+    margin-left:150px;
+    margin-right: 150px;
+  }
+
+  .way-card {
+    width:80%;
+  }
+  .way-header {
+    width: 48vw;
+  }
+}
+
 @media only screen and (max-width: 1492px) {
   
   .contact-sidebar {
@@ -1295,7 +740,6 @@ header .brand-name a{
     text-align: center;
     color: #FFFFFF;
     line-height:30px;
-    width:100%;
   }
 
   
@@ -1303,6 +747,22 @@ header .brand-name a{
     font-size:14px;
   }
 
+}
+
+@media only screen and (max-width:1400px) {
+  .card-1, .card-2 {
+    margin-left:100px;
+    margin-right: 100px;
+  }
+  .main-grid {
+    height:auto;
+  }
+  .way-card {
+    width:85%;
+  }
+  .way-header {
+    width:50vw;
+  }
 }
 
 @media only screen and (max-width:1300px) {
@@ -1324,7 +784,323 @@ header .brand-name a{
     padding-right:30px;
   }
 
+  .way-header {
+    width: 55vw;
+  }
+  .meet-header-contener {
+    width:25vw;
+  }
 }
+
+@media only screen and (max-width:1200px) {
+  .way-header {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .way-header {
+    width: 65vw;
+  }
+  .meet-header-contener {
+    width:28vw;
+  }
+}
+
+@media only screen and (max-width:1030px) {
+  .way-card {
+    width: 90%;
+  }
+
+  .card-1, .card-2 {
+    margin-left:50px;
+    margin-right:50px;
+  }
+}
+
+/*********************
+  Media Query
+**********************/
+/* Laptop - 1024 */
+@media only screen and (max-width: 1024px) {
+  .way {
+    padding: 150px 50px 100px 50px;
+  }
+
+
+  .about p {
+    font-size: 18px;
+  }
+
+  .card-p-bottom {
+    font-size: 14px;
+  }
+
+  .card-1-img,
+  .card-2-img {
+    max-width: 350px;
+  }
+
+  .info-inner {
+    height: 55px;
+  }
+
+  .way-header {
+    width: 70vw;
+  }
+  .meet-header-contener {
+    width:34vw;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .way-header {
+    width: 75vw;
+  }
+  .meet-header-contener {
+    width:38vw;
+  }
+
+  .way-card {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .way-header {
+    width: 90vw;
+    margin-top: 50px;
+  }
+  .meet-header-contener {
+    width:38vw;
+  }
+
+  .way-card {
+    flex-direction: column;
+    background: none;
+    box-shadow: none;
+  }
+
+  .way-card img {
+    width:50%;
+    margin:0 auto 30px auto;
+  }
+
+  .way-card p {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .card-2-img {
+    margin-right: 0;
+  }
+
+  .card-1-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1-img, .card-2-img {
+    height:300px;
+    overflow: hidden;
+    margin-bottom:30px;
+  }
+
+  .card-1-middle img, .card-2-middle img {
+    height:400px;
+    order:1;
+  }
+
+  .card-inner {
+    width: 100%;
+    align-items: flex-start;
+    order:2
+  }
+
+  .card-2-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-2-img {
+    height:300px;
+    overflow: hidden;
+    margin-bottom:30px;
+  }
+
+  .card-2-middle img {
+    height:400px;
+  }
+
+}
+@media only screen and (max-width: 785px) {
+  .way-header {
+    background:none;
+    color:#ffffff;
+    box-shadow:none;
+    font-size:35px;
+    line-height: 50px;
+  }
+
+  .meet-header-contener {
+    background:none;
+    box-shadow:none;
+    font-size:35px;
+  }
+
+  .meet-header-contener h2 {
+    color:#ffffff;
+  }
+  
+  .card-2-header-container {
+    right: -80px;
+  }
+
+  .card-1-header-container {
+    left: -80px;
+  }
+
+  .way {
+    padding: 0px 50px;
+  }
+
+  .way-card {
+    width: 100%;
+    padding:0;
+    margin:0;
+  }
+
+  .way-card p {
+    margin: 0;
+  }
+  
+  .meet-header-contener h2 {
+    margin-top: 50px;
+  }
+
+  .way-header {
+    width: 100vw;
+    margin-top: 50px;
+  }
+  .meet-header-contener {
+    width:100vw;
+  }
+
+}
+
+@media only screen and (max-width: 672px) {
+  .card-2-header-container {
+    display:none;
+  }
+
+  .card-1-header-container {
+    display:none;
+  }
+
+  .card-background {
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  .card-1-middle, .card-2-middle {
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  .grid {
+    width: 95%;
+  }
+
+  .card-p-bottom {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .grid {
+    grid-template-columns: 25% 1fr;
+  }
+
+  .inner-text {
+    font-size: 16px;
+  }
+
+  .info-inner {
+    font-size: 14px;
+  }
+
+  .info {
+    margin-left: 15px;
+  }
+
+  .card-1-img, .card-2-img {
+    height: 230px;
+  }
+
+  .card-1-middle img, .card-2-middle img {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .way-header, .meet-header-contener h2 {
+    font-size: 25px;
+  }
+
+  .way {
+    padding: 0 20px;
+  }
+
+  .way-card p {
+    font-size: 14px;
+  }
+
+  .way-card img {
+    width: 60%;
+  }
+
+  .card-1, .card-2 {
+    margin:0 20px;
+  }
+
+  .grid {
+    grid-template-columns: 30% 1fr;
+  }
+
+  .info-inner {
+    font-size: 13px;
+    height: 70px;
+  }
+
+  .card-p-bottom {
+    padding: 0 20px 50px 20px;
+  }
+
+  /* FOOTER */ 
+
+  footer .footer-container {
+    width: 100% !important;
+  }
+
+  footer h1 {
+    font-size: 25px !important;
+  }
+
+  footer h2 {
+    font-size: 15px !important;
+  }
+
+  footer p {
+    font-size: 12px !important;
+  }
+}
+
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
