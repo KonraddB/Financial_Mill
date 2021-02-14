@@ -357,67 +357,6 @@ header .brand-name a{
   color: #2E3033;
   }
 
-
-@media screen and (max-width: 768px) {
-    .home .slide.active{
-        position: relative;
-        width:100%;
-    }
-    .home {
-        font-size:14px;
-    }
-
-    .home .caption .h2Blog {
-        font-size: 18px;
-        text-transform: lowercase;
-        color:black;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-        margin-bottom: 20px;
-    }
-    
-    .h1Blog {
-        font-size: 52px;
-        margin-bottom: 40px;
-    }
-
-    .sidebar {
-        display:none;
-    }
-
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "rightpage";
-    }
-
-    .card {
-        margin-top:30px;
-    }
-
-    ul {
-        width:80%;
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items:center;
-    }
-
-    .containerHome {
-        width:80%;
-    }
-
-    .h1Blog {
-        font-size:42px;
-    }
-    
-    .home .caption {
-        margin-top:-40px;
-    }
-}
-
   /* SIDEBAR */
 
 .main-grid {
@@ -631,7 +570,7 @@ header .brand-name a{
     width: 20%;
     position: absolute;
     z-index: 1;
-    top: 100px;
+    top: 36px;
     right: 0;
     padding-right:30px;
   }
@@ -657,7 +596,6 @@ header .brand-name a{
     text-align: center;
     color: #FFFFFF;
     line-height:30px;
-    width:100%;
   }
 
   
@@ -690,7 +628,66 @@ header .brand-name a{
 .sidebar img{
   width:auto;
   height:auto;
-} 
+}
+
+@media only screen and (max-width:992px) {
+  .h1Blog {
+    padding:0;
+  }
+  
+}
+
+@media only screen and (max-width:800px) {
+  .hero {
+    grid-template-columns: auto;
+  }
+
+  .hero4, .hero6 {
+    margin-top: 0 !important;
+  }
+  
+  .h1Blog {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .h1Blog {
+    font-size: 30px;
+    padding: 100px 0 30px 0;
+  }
+
+  .home .caption {
+    padding:0;
+  }
+
+  .hero {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .hero1 h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  /* FOOTER */ 
+
+  footer .footer-container {
+    width: 100% !important;
+  }
+
+  footer h1 {
+    font-size: 25px !important;
+  }
+
+  footer h2 {
+    font-size: 15px !important;
+  }
+
+  footer p {
+    font-size: 12px !important;
+  }
+}
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 footer {
