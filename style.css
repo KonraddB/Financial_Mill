@@ -2111,11 +2111,14 @@ footer p {
   .container-calendar .closest-event {
     width: 60vw;
   }
+  .latestposts {
+    background: linear-gradient(180.06deg, rgba(1, 0, 36, 0.9) 8.25%, rgba(1, 0, 36, 0.63) 43.63%, rgba(1, 0, 36, 0.576) 56.87%, rgba(1, 0, 36, 0.9) 94.01%);
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  /* ABOUT PAGE */
 
+  /* ABOUT PAGE */
   .flip-card {
     width:100%;
     height: auto;
