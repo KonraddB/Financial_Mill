@@ -253,9 +253,8 @@ header .brand-name a{
 .left-page .container-button {
   display:flex;
   justify-content: flex-start;
-  width:100%;
-  grid-gap:35px;
-  width:80%;
+  column-gap:35px;
+  width:82%;
   margin:0 auto;
 }
 
