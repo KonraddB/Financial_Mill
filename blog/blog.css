@@ -229,7 +229,7 @@ header .brand-name a{
 
 .left-page .choose-topic {
   height:68px;
-  width:80%;
+  width:82%;
   margin:35px auto 35px auto;
   background: rgba(1, 0, 48, 0.8);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -252,8 +252,7 @@ header .brand-name a{
 
 .left-page .container-button {
   display:flex;
-  justify-content: flex-start;
-  column-gap:35px;
+  justify-content: space-between;
   width:82%;
   margin:0 auto;
 }
@@ -283,10 +282,9 @@ header .brand-name a{
 
 .left-page .container-card {
   display:flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap:wrap;
-  grid-gap:35px;
-  width:80%;
+  width:82%;
   margin:0 auto;
 }
 
