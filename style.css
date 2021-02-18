@@ -2331,3 +2331,280 @@ footer p {
     left: calc(20vw - -4rem);
   }
 }
+
+/* iOS */
+
+@supports (-webkit-touch-callout: none)  {
+  @media screen and (max-device-width: 480px)  {
+  .home .slide.active {
+    position: absolute;
+    width: 90%;
+  }
+  .home {
+    font-size: 123px;
+}
+
+  .home .caption .h2Blog {
+    font-size: 18px;
+    text-transform: lowercase;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    margin-bottom: 20px;
+  }
+
+  .h1Blog {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "rightpage";
+  }
+
+  .card {
+    margin-top: 30px;
+  }
+
+  .ul {
+    margin:0 auto ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .flip-card-back p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 153.4%;
+    margin:0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom:20px;
+    margin-top:1px;
+  }
+
+
+
+  .slide-content-text {
+  font-family: "Montserrat";
+  font-size: 32px !important;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  will-change: auto;
+}
+.flip-card-back h3 {
+  margin-top: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 153.4%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color:#ffffff;
+}
+.image-container p {
+  width: 90%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 70px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: absolute;
+  color: #ffffff;
+}
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height:max-content;
+  margin-bottom: 40px;
+
+  
+}
+
+
+
+.container-questions{
+  width: 100%;
+}
+.container-questions .middle-question {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+}
+
+
+.container-questions .top-question{
+
+
+  margin:30px auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-questions .left-question{
+  height:60px; 
+  width: 90%;
+  
+  
+  display:flex;
+  align-items: center;
+  margin:0 auto;
+  
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.container-questions .right-question{
+  height:6px; 
+  width:90%;
+ 
+  
+
+  display:flex;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.container-questions .top-question{
+  width: 90%;
+}
+.container-questions .middle-question .left-question, .container-questions .middle-question .right-question{
+  width:95%;
+  height:70px;
+}
+.container-questions .top-question p {
+  font-size:15px;
+}
+
+.container-questions .middle-question {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container-questions .middle-question p {
+  font-size: 15px;
+}
+
+/* kanendarz */
+
+.container-card {
+ 
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.calendar-card-container {
+  width:85%;
+  margin:50px auto;
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.calendar-card-container .card-container {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align:center;
+  display: block;
+  position:relative;
+  flex-basis:75%;
+  margin:0 auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.calendar-card-container .card-container .entry-number {
+  position:absolute;
+  right:5px;
+  top:5px;
+  padding:10px 10px 0 0;
+}
+
+.calendar-card-container .card-container .entry-number h1 {
+  font-size:20px;
+  margin:0;
+  padding:0;
+  font-weight:700;
+}
+
+.calendar-card-container .card-container .entry-number h4 {
+
+  font-size:15px;
+  font-weight:700;
+}
+
+.calendar-card-container .card-container h2 {
+  font-size:20px;
+  font-weight:600;
+  color: rgba(46, 48, 51, 0.7);
+  padding:49px 0 0 0;
+  margin:0;
+}
+
+.calendar-card-container .card-container h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin:0;
+  padding:20px 0;
+}
+
+.calendar-card-container .card-container h1 img {
+  width: 25px;
+  height: 25px;
+  margin-right:10px;
+}
+
+.calendar-card-container .card-container p {
+  padding-bottom:40px;
+  font-size:14px;
+  font-weight: 700;
+}
+
+.calendar-card-container .card-container h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight:600;
+  font-size:14px;
+  margin:0;
+  padding:0 0 40px 0;
+}
+
+/* stopka */
+footer .footer-container {
+  width: 100%;
+}
+
+footer h1 {
+  font-size: 25px;
+}
+
+footer h2 {
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+.container-questions .middle-question .left-question, .container-questions .middle-question .right-question {
+ 
+  
+  margin-bottom: 30px;
+}
+}
+}
