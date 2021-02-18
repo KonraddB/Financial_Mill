@@ -1439,7 +1439,7 @@ p {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  border-radius:10px;
+  border-radius:30px;
   background-size:cover;
 }
 
