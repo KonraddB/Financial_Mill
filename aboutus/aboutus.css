@@ -1214,3 +1214,65 @@ footer p {
   color: #FFFFFF;
 }
 
+/* ios */ 
+@supports (-webkit-touch-callout: none)  {
+  @media screen and (max-device-width: 480px)  {
+ 
+/* stopka */
+footer .footer-container {
+  width: 100%;
+}
+
+footer h1 {
+  font-size: 25px;
+}
+
+footer h2 {
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 12px;
+}
+}
+.way-header {
+  
+  width:auto;
+
+}
+
+}
+
+/* Sidebar safari*/
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0)
+{ @media screen { 
+
+  .bottom-sidebar {
+    height:auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .contact-sidebar {
+  
+    height:auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .middle-sidebar {
+    height:auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+  }
+  .bottom-sidebar h3 {
+    color:#ffffff;
+    padding-top:20px;
+    padding-bottom: 5%;
+  }
+  .middle-sidebar-container {
+    padding-bottom: 5%;
+    padding-top: 5%;
+   
+  }
+ 
+}}

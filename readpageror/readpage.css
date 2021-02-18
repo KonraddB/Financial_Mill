@@ -760,3 +760,37 @@ footer p {
 
   color: #FFFFFF;
 }
+
+/* Sidebar safari*/
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0)
+{ @media screen { 
+
+  .bottom-sidebar {
+    height:auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .contact-sidebar {
+  
+    height:auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .middle-sidebar {
+    height:auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+  }
+  .bottom-sidebar h3 {
+    color:#ffffff;
+    padding-top:20px;
+    padding-bottom: 5%;
+  }
+  .middle-sidebar-container {
+    padding-bottom: 5%;
+    padding-top: 5%;
+   
+  }
+ 
+}}
