@@ -499,7 +499,7 @@ header .brand-name a{
   grid-template-columns: 82% 18%;
   grid-template-rows: auto;
   position:relative;
-  height:1966px;
+  height:auto;
   margin-top:-7px;
   background-position-x: center;
 }
@@ -1034,10 +1034,6 @@ header .brand-name a{
     font-size: 14px;
   }
 
-  .info {
-    margin-left: 15px;
-  }
-
   .card-1-img, .card-2-img {
     height: 230px;
   }
@@ -1045,14 +1041,50 @@ header .brand-name a{
   .card-1-middle img, .card-2-middle img {
     height: 300px;
   }
+
+  .card-h4-bottom {
+    display: block !important;
+    margin:0 auto;
+    font-size: 25px !important;
+  }
+
+  .mobile-br {
+    display:block !important;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+  .mask {
+    padding: 80px 0;
+  }
+
+  .mask h2 {
+    margin-top: 40px;
+  }
+
   .about h2 {
     font-size: 40px;
   }
 
-  .way-header, .meet-header-contener h2 {
+  .mask p {
+    display: none;
+  }
+
+  .way-header {
+    display:none;
+  }
+
+  .way-header-mobile {
+    display: block !important;
+    margin:40px auto;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .meet-header-contener h2 {
     font-size: 25px;
   }
 
@@ -1079,6 +1111,10 @@ header .brand-name a{
   .info-inner {
     font-size: 13px;
     height: 70px;
+  }
+
+  .info-inner p {
+    font-weight: 500;
   }
 
   .card-p-bottom {
