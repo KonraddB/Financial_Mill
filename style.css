@@ -1785,7 +1785,7 @@ form {
 }
 
 #content {
-  height: 350px;
+  min-height: 250px;
   margin:0;
   padding-right:20px;
 }
@@ -2274,6 +2274,11 @@ footer p {
     , #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 50%);
     border-radius: 7px;
+  }
+
+  
+  .hide-mobile {
+    display:none;
   }
 
   /* CONTACT SECTION */
