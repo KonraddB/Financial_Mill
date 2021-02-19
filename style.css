@@ -2397,7 +2397,9 @@ footer p {
     margin-top:1px;
   }
 
-
+  .image-container {
+    background-attachment: initial;
+  }
 
   .slide-content-text {
   font-family: "Montserrat";
